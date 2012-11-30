@@ -1,0 +1,1070 @@
+/************************************************************************************
+RESET
+*************************************************************************************/
+html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul,
+dd, dt, li, tbody, td, tfoot, th, thead, tr, button, del, ins, map, object,
+a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span,
+strong, sub, sup, tt, var, legend, fieldset {
+	margin: 0;
+	padding: 0;
+	font-size:14px;
+}
+
+img, fieldset {
+	border: 0;
+}
+
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto; /* ie8 */
+}
+
+/* set html5 elements to block */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { 
+    display: block;
+}
+
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+body {
+	background: #b29f7f url(/bagelmania.com/sites/all/themes/zen/ashly/images/bg5.jpg) repeat;   /* repeat-x ; BG11 */
+	//background: #b29f7f url(/bagelmania.com/sites/all/themes/zen/ashly/images/hb2.jpg) repeat;  
+	background: #b29f7f url(/bagelmania.com/sites/all/themes/zen/ashly/images/textureBG5.jpg) repeat; 
+	font: .81em/150% Arial, Helvetica, sans-serif;
+	color: #666;
+	//border-top: 10px solid #000000;
+	
+}
+a {
+	color: #026acb;
+	text-decoration: none;
+	outline: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+p {
+	margin: 0 0 1.2em;
+	padding: 0;
+}
+
+/* list */
+ul, ol {
+	//margin: 1em 0 1.4em 24px;
+	margin:0;
+	padding: 0;
+	line-height: 140%;
+}
+li {
+	margin: 0 0 .5em 0;
+	padding: 0;
+}
+
+/* headings */
+h1, h2, h3, h4, h5, h6 {
+	line-height: 1.4em;
+	margin: 20px 0 .4em;
+	color: #000;
+}
+h1 {
+	font-size: 2em;
+}
+h2 {
+	font-size: 1.6em;
+}
+h3 {
+	font-size: 1.4em;
+}
+h4 {
+	font-size: 1.2em;
+}
+h5 {
+	font-size: 1.1em;
+}
+h6 {
+	font-size: 1em;
+}
+
+/* reset webkit search input styles */
+input[type=search] {
+	-webkit-appearance: none;
+	outline: none;
+}
+input[type="search"]::-webkit-search-decoration, 
+input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+
+#pagewrap {
+	width: 980px;
+	margin: 0 auto 0 auto;
+}
+
+.pageBorder {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/latteralBorder.png)  left bottom repeat-x;
+height: 5px;
+width: 100%;
+padding:0;
+margin: 0;
+position:relative;
+}
+
+/************************************************************************************
+HEADER
+*************************************************************************************/
+#headerContainer {
+     //position:fixed;
+	 position:relative;
+     width:100%;
+    -webkit-box-shadow: 0 3px 30px #645740;
+	-moz-box-shadow: 0 3px 30px #645740;
+	box-shadow: 0 3px 30px #645740;
+	//background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/hb-6.jpg) no-repeat right top;
+    background: #b29f7f url(/bagelmania.com/sites/all/themes/zen/ashly/images/textureBG5.jpg) repeat; 	
+	border-bottom: 1px solid #645740;
+	z-index: 500;
+	border-top: 10px solid #000000;
+	top:0;
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+}
+
+#topBar {
+position:absolute;
+top:0;
+left:0;
+width:100%;
+height:10px;
+margin:0;
+padding:0;
+//background: #6a6a6a url(images/nav-bar-bg.png) repeat-x;
+//background: -webkit-gradient(linear, left top, left bottom, from(#ccc), to(#6a6a6a));
+//background: linear-gradient(-90deg, #66635e, #6a6a6a);
+//border-bottom: 1px solid #6a6a6a;
+background:  #14506f; /* #9a9579; */
+//-webkit-box-shadow: 0 3px 30px #000000;
+	-moz-box-shadow: 0 3px 30px #000000;
+	//box-shadow: 0 3px 30px #000000;
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+}
+
+
+#header {
+	position:relative;
+	//width:96%;       /** JH- added **/
+	width: 980px;
+	//height: 170px; /*160px;*/
+    padding:  0;
+	margin: 0 auto 0 ;
+
+	
+}
+
+
+/* site logo */
+#site-logo {
+	position: relative;   /** JH- was absolute **/
+	float:left;           /** JH- changed **/
+	//top: 53px;
+	//margin-top: 80px;     /**JH- added **/
+	//height:120px;
+	padding: 0;
+}
+#site-logo a {
+	font-family: Bowlby One Sc,Arial, Helvetica, sans-serif;
+    font-size: 37px;
+	color: #000000;
+	text-decoration: none;
+	background:  url('/bagelmania.com/sites/all/themes/zen/ashly/images/BMHB2.png') no-repeat left top;
+	padding: 60px 0 10px 155px;  /** was with just Bagelmania text 117px 0 0 155px; **/
+	height:90px;                 /** was 43px **/
+	display:block;
+}
+
+/* site description */
+#site-description {
+	font: italic 125%/130% "Times New Roman", Times, serif;
+	color: #000000;
+	position: absolute;   /** JH- was absolute **/
+	float:left;
+	margin: 150px 0 0 415px;
+	//padding: 0 0 0 4%
+}
+.coffee {
+position:relative;
+float:right;
+margin: 75px 50px 0;
+}
+
+/* searchform */
+#searchform {
+	position: absolute;
+	right: 10px;
+	bottom: 6px;
+	z-index: 100;
+	width: 160px;
+}
+#searchform #s {
+	width: 140px;
+	float: right;
+	background: #fff;
+	border: none;
+	padding: 6px 10px;
+	/* border radius */
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	/* box shadow */
+	-webkit-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	-moz-box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	box-shadow: inset 0 1px 2px rgba(0,0,0,.2);
+	/* transition */
+	-webkit-transition: width .7s;
+	-moz-transition: width .7s;
+	transition: width .7s;
+}
+
+/************************************************************************************
+MAIN NAVIGATION
+*************************************************************************************/
+#menu-icon {
+	display: none; /* hide menu icon initially */
+}
+#main-nav {
+	width: 980px;       /** JH- changed **/
+	height: 44px;
+	position:relative;   /** JH- added **/
+	margin: 0 auto 10px auto; 
+	//margin-top: 80px;     /**JH- added **/
+	padding: 3px 0;
+	z-index: 100;
+	/* rounded corner */
+	//-webkit-border-radius: 8px;
+	//-moz-border-radius: 8px;
+	//border-radius: 8px;
+	/* box shadow */
+	//-webkit-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	//-moz-box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	//box-shadow: inset 0 1px 0 rgba(255,255,255,.3), 0 1px 1px rgba(0,0,0,.4);
+	background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/menuBorder.png) ;
+}
+/*#main-nav li {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	float: left;               
+	position: relative;
+}*/
+#main-nav li {
+	margin: 0 3px 0 0;
+	padding: 0;
+	list-style: none;
+	float: left;               
+	position: relative;
+	text-align:center;
+	width: 193px;
+	background:#806F52;
+	
+}
+#main-nav li.first{           /** #main-nav li.left, changed to first with the change of the menu to the block **/
+	margin: 0 3px 0 3px;
+	padding: 0;
+	list-style: none;
+	float: left;               
+	position: relative;
+	text-align:center;
+	width: 190px;
+	
+}
+
+
+#main-nav a {
+	line-height: 100%;
+	//font-weight: bold;
+	font-family: Antic,PT Sans Narrow, arial;
+	font-weight:bold;
+	font-size:16px;
+	color: #ffffff;
+	display: block;
+	padding: 14px 15px;
+	text-decoration: none;
+	background:#806F52;	
+}
+#main-nav a:hover {
+	color: #000000;
+	/* gradient */
+	//background: -webkit-gradient(linear, left top, left bottom, from(#282828), to(#4f4f4f));
+	//background: -moz-linear-gradient(top,  #282828,  #4f4f4f);
+	//background: linear-gradient(-90deg, #282828, #4f4f4f);
+	background:#C1B091;
+    opacity:.5;
+    filter: alpha(opacity=25);
+	font-weight:bold;
+}
+#main-nav img{    /** JH this is for the coffee cup **/
+margin: -58px 0 0 0;
+}
+
+
+/************************************************************************************
+CONTENT
+*************************************************************************************/
+p.phoneNumber {
+margin:10px 0 10px;
+padding:0;
+}
+p.phoneNumber span {
+color:#000;
+font-family: Bowlby One Sc,Arial, Helvetica, sans-serif;
+font-size: 125%;
+}
+#content {
+	background:#c1b091 ;    /* #a5916f;  */
+	border: 8px solid #cbbca1 ; /* #B29F7F; */
+	margin:  10px  0 30px;  
+	padding: 20px 35px;
+	width: 584px;         /* JH was 600px; , 16px added for border */
+	min-height: 900px;
+	position:relative;
+	float: left;
+	/* rounded corner */
+	//-webkit-border-radius: 8px;
+	//-moz-border-radius: 8px;
+	//border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	behavior:url(http://localhost/zajack.com/sites/all/themes/zen/ashly/css/PIE.htc);
+
+}
+.contentBorder {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/latteralBorder.png)  left bottom repeat-x;
+height: 5px;
+width: 100%;
+padding:0;
+margin: 0 0 15px;
+position:relative;
+}
+#middleContainer {
+position:relative;
+float:left;
+width: 100%;
+border-top: 1px dotted #806f52;
+border-bottom: 1px dotted #806f52;
+margin: -15px 0 0;
+padding:25px 0 ;
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/latteralBorder.png) left top repeat-x,
+            url(/bagelmania.com/sites/all/themes/zen/ashly/images/latteralBorder.png)  left bottom repeat-x;
+
+}
+#middleContainer h2 {
+margin:-10px 0 25px 0;
+padding:0;
+text-align:center;
+font-family: Bowlby One Sc,Arial, Helvetica, sans-serif;
+font-size: 175%;
+color: #CD853F;
+background: #806F52;
+border: 2px dotted;
+}
+
+#leftContent {
+position:relative;
+float:left;
+width:50%;
+height:100%;
+margin: 0 0 0 0;
+padding: 0;
+//-moz-box-shadow:    inset 0 0 30px #00000;
+//-webkit-box-shadow: inset 0 0 30px #000000;
+//box-shadow:         inset 0 0 50px #000000;
+//background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/marissaZajack.png) ;
+}
+#leftContent img {
+//border:10px solid #b5a790;
+padding:0;
+margin:0;
+border: 2px solid;
+}
+#rightContent {
+position:relative;
+float:left;
+width:36%;
+padding:0 2% 0 10%;
+height:100%;
+margin: 0 0 0 0;
+   //background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ee6b00), to(#af560e));
+   //background-image: -webkit-linear-gradient(top, #ee6b00, #af560e);
+   //background-image: -moz-linear-gradient(top, #ee6b00, #af560e);
+   //background-image: -ms-linear-gradient(top, #ee6b00, #af560e);
+   //background-image: -o-linear-gradient(top, #ee6b00, #af560e);
+   // -pie-background: linear-gradient(#C0D9D9, #2F4F4F);
+   // behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+  
+}
+#rightContent h3 {
+text-decoration: underline;
+text-align:left;
+font-family: Bowlby One Sc, Arial;
+font-size: 150%;
+color:#fff;
+margin:0;
+padding:0;
+}
+#rightContent p {
+color: #000000;
+text-align:left;
+padding: 15px 0 0 0;
+word-wrap: break-word;
+}
+#content .bottomHeader {
+font-family: Bowlby One Sc, Arial;
+font-size: 175%;
+//text-align:center;
+color:#806f52;
+padding: 10px 0 0;
+}
+
+/* post */
+.post {
+	margin-bottom: 40px;
+}
+.post-title {
+	margin: 0 0 5px;
+	padding: 0;
+	font: bold 26px/120% Arial, Helvetica, sans-serif;
+}
+.post-title a {
+	text-decoration: none;
+	color: #000;
+}
+.post-meta {
+	margin: 0 0 10px;
+	font-size: 90%;
+}
+
+/* post image */
+.post-image {
+	margin: 0 0 15px;
+}
+
+
+/************************************************************************************
+SIDEBAR
+*************************************************************************************/
+#sidebar {
+	width: 260px; /*280px;*/
+	float: right;
+	margin: 10px 0 30px; 
+	padding: 0 0 0 20px;
+	background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/sidebarBorder.png)       left top repeat-y ;
+}
+.widgetBorder {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/latteralBorder.png)  left bottom repeat-x;
+height: 5px;
+width: 100%;
+position:relative;
+}
+.widget {
+	background:#c1b091 ;    /* #a5916f;  */
+	border: 8px solid #cbbca1 ; /* #B29F7F; */
+	margin: 15px 0 15px ;
+	padding: 10px 20px;
+	/* rounded corner */
+	//-webkit-border-radius: 8px;
+	//-moz-border-radius: 8px;
+	//border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+}
+.topColumnWidget {
+	background:#c1b091 ;    /* #a5916f;  */
+	border: 8px solid #cbbca1 ; /* #B29F7F; */
+	margin: 0 0 15px ;
+	padding: 20px 20px 0;
+	text-align:center;
+	/* rounded corner */
+	//-webkit-border-radius: 8px;
+	//-moz-border-radius: 8px;
+	//border-radius: 8px;
+	/* box shadow */
+	-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+}
+.social a {
+text-decoration: none;
+}
+.social img:hover { /** this is for ie8-9 **/
+opacity:.5;
+filter: alpha(opacity=25);
+}
+.social a:hover {
+opacity:.5;
+filter: alpha(opacity=25);
+}
+.widgettitle {
+	margin: 0 0 5px;
+	padding: 0;	
+}
+.widget ul {
+	margin: 0;
+	padding: 0;
+}
+.widget li {
+	margin: 0;
+	padding: 6px 0;
+	list-style: none;
+	clear: both;
+	border-top: solid 1px #eee;
+}
+
+/* flickr widget */
+.widget .flickr_badge_image {
+	margin-top: 10px;
+}
+.widget .flickr_badge_image img {
+	width: 48px;
+	height: 48px;
+	margin-right: 12px;
+	margin-bottom: 12px;
+	float: left;
+}
+li.yelp a{
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/yelp.png)       left center no-repeat ;
+padding: 0 0 0 65px;
+display:block;
+//width:100%;
+line-height: 110%;
+}
+li.us a {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/urbanspoon.png) left center no-repeat ;
+padding: 0 0 0 65px;
+display:block;
+}
+li.zagat a {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/zagat.png)      left center no-repeat ;
+padding: 0 0 0 65px;
+display:block;
+}
+li.tripadvisor a {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/tripadvisor.png)      left center no-repeat ;
+padding: 0 0 0 65px;
+display:block;
+}
+li.yelp a:hover,
+li.us a:hover,
+li.zagat a:hover,
+li.tripadvisor a:hover {
+opacity: .25 ;
+filter: alpha(opacity=25);
+}
+/************************************************************************************
+Location-pdf
+*************************************************************************************/
+.location-pdf{
+position:relative;
+float:left;
+width: 100%;
+margin: 0 ;
+}
+
+.location {
+background:#c1b091 ;    /* #a5916f;  */
+border: 8px solid #cbbca1 ; /* #B29F7F; */
+position:relative;
+float:left;
+width:44%;
+height:250px;
+margin:0;
+padding:2%;
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+box-shadow: 0 1px 3px rgba(0,0,0,.4);
+behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+
+}
+.location img {
+text-align:center;
+padding: 0 0 0 20%;
+}
+.location img a {
+}
+.location  a:hover {
+opacity:.25;
+filter: alpha(opacity=25);
+}
+
+.pdfBottom{
+background:#c1b091 ;    /* #a5916f;  */
+border: 8px solid #cbbca1 ; /* #B29F7F; */
+position:relative;
+float:left;
+width:44%;
+height:250px;
+margin: 0 0 0 .5%;
+padding:2%;
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+
+}
+.location-pdf h4 {
+font-size: 1.4em;
+margin: 0 0 5px;
+}
+.pdfBottom  li {
+list-style:none;
+border-bottom: 1px solid;
+margin:0;
+padding: 6px 0;
+clear: both;
+display:block;
+}
+.pdf li a {
+display:block;
+}
+
+
+/************************************************************************************
+POLL
+*************************************************************************************/
+.pollQuestion {
+position:relative;
+float:left;
+width: 100%;
+//border-top: 1px dotted #806f52;
+//border-bottom: 1px dotted #806f52;
+margin: 0 ;
+padding:25px 0 15px ;
+//background: blue;
+}
+.pollQuestion img {     /** this is for the images where the poll used to be **/
+float:left;
+width:21%;
+padding: 0;
+margin: 0 2% 0;
+}
+.pollQuestion .poll {
+background:#c1b091 ;    /* #a5916f;  */
+border: 8px solid #cbbca1 ; /* #B29F7F; */
+position:relative;
+float:left;
+text-decoration: none;
+font-size: 90%;
+line-height: 1.3em;
+color: #66635e;
+width: 98%;          /**JH was 91% **/
+//height: 125px;
+margin:0 3% 0 0;
+padding:2% 0;  // JH was 2% 5% 2% 2%;
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+box-shadow: 0 1px 3px rgba(0,0,0,.4);
+behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+
+}
+.pollQuestion  h2.block-title {
+display:none;
+}
+.pollQuestion  li.first {
+display: none;
+}
+.poll .title {
+color: #000;
+font-family: Bowlby One Sc,Arial, Helvetica, sans-serif;
+font-size: 150%;
+padding:0 0 20px;
+}
+.poll .text {
+color: #806F52;
+padding: 0 0 5px;
+font-weight:bold;
+}
+a.voteHere {
+position:absolute;
+top:10px;
+right:10px;
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/voteHere.png)      left center no-repeat ;
+padding: 0 0 0 55px;
+width:100px;
+height:50px;
+line-height:50px;
+font-size:120%;
+text-decoration:none;
+color:#000;
+}
+a.voteHere:hover {
+opacity: .50;
+filter: alpha(opacity=50);
+}
+li.comment_forbidden  {   /** gets rid of links at bottom of poll display on poll node **/
+display:none;
+}
+.poll 
+.vote-form 
+.choices .title {
+font-weight:normal;
+}
+.poll 
+.vote-form 
+.choices  {
+margin:0;
+padding:0;
+}
+#edit-vote--2 .form-submit {
+text-align:left;
+}
+.poll .vote-form { /** alignment for users havent voted **/
+text-align:left;
+}
+#pagewrap .tabs {  /** links below poll for users that haven't voted **/
+display:none;
+}
+ul.links  {   /** links below poll for users that haven't voted **/
+display:none;
+}
+.vote-form {
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/plainBagel.jpg) right top no-repeat;
+}
+/************************************************************************************
+FOOTER
+***************************************************************************************/
+.topFooter {
+position:relative;
+float:left;
+width: 100%;
+//border-top: 1px dotted #806f52;
+border-bottom: 1px dotted #806f52;
+margin: 0 ;
+padding: 0 0 15px ;
+//background: blue;
+}
+
+.topFooter .wholesale,
+.topFooter .donations,
+.topFooter .contact {
+//background:#c1b091 ;    /* #a5916f;  */
+border: 8px solid #cbbca1 ; /* #B29F7F; */
+position:relative;
+float:left;
+text-decoration: none;
+font-size: 90%;
+line-height: 1.3em;
+color: #66635e;
+width: 14%;
+height: 125px;
+margin:0 3% 0 0;
+background: #C1B091;
+padding:2% 5% 2% 2%;
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+
+}
+.topFooter .about {   /** this box is seperate because it is the last one, no margin-right **/
+//background:#c1b091 ;    /* #a5916f;  */
+border: 8px solid #cbbca1 ; /* #B29F7F; */
+position:relative;
+float:left;
+text-decoration: none;
+font-size: 90%;
+line-height: 1.3em;
+color: #66635e;
+width: 14%;
+height: 125px;
+margin:0;
+background: #C1B091;
+padding:2% 5% 2% 2%;
+-webkit-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	-moz-box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	box-shadow: 0 1px 3px rgba(0,0,0,.4);
+	behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);
+}
+.topFooter h3 {
+color: #806F52;
+font-family: Bowlby One Sc,Arial;
+font-size: 155%;
+margin:0;
+padding:0 2%;
+max-width: 100%;
+text-decoration:underline;
+}
+
+a.wholesale:hover{
+background: #FFF68F url(/bagelmania.com/sites/all/themes/zen/ashly/images/topFooterBG.png) 150% 105% no-repeat;
+color:#000000;
+}
+a.donations:hover{
+background: #EE9A49 url(/bagelmania.com/sites/all/themes/zen/ashly/images/topFooterBG.png) 150% 37% no-repeat ;
+color:#000000;
+}
+a.contact:hover{
+background: #AEBB51 url(/bagelmania.com/sites/all/themes/zen/ashly/images/topFooterBG.png) 150% 68% no-repeat;
+color:#000000;
+}
+a.about:hover{
+background: #ADD8E6 url(/bagelmania.com/sites/all/themes/zen/ashly/images/topFooterBG.png) 150% top no-repeat ;
+color:#000000;
+}
+#footer {
+	clear: both;
+	color: grey;
+	font-size: 85%;
+	border-top: 1px dotted #CDCDCD;
+	padding: 15px 0 0 0;
+}
+#footer a {
+	color: grey;
+}
+#footer p {
+position:relative;
+float:left;
+}
+#footer .logIn  {
+position:relative;
+float:right;
+}
+#footer ul {
+float:right;
+margin:0;
+padding:0;
+}
+
+
+/***********************************************************************************************
+FORM STYLES
+**********************************************************************************************/
+.col1 .marker, .form-required {  /** this styles the asterisk next to required fields **/
+    color: #085B7A;
+}
+.form-textarea-wrapper textarea { /** this is to change width of text area in  Contact webform **/
+    -moz-box-sizing: border-box;
+    display: block;
+    margin: 0;
+    width: 53%;
+	height:150px;
+	border:1px solid #000000 !important;
+	padding: 10px 10px;
+    border-radius: 3px 3px; 
+   -moz-border-radius: 3px; 
+   -webkit-border-radius: 3px;
+   behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc);  /* added this line so PIE.htc will work*/
+   background-color: transparent;
+    -moz-box-shadow:    inset 0 0 10px #00000;
+	-webkit-box-shadow: inset 0 0 10px #000000;
+	box-shadow:         inset 0 0 10px #000000;
+color:grey;
+   background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/transBG.png) 0 0 repeat;
+}
+.form-textarea-wrapper textarea:hover {
+border: 1px solid grey;
+}
+.form-textarea-wrapper textarea:focus {
+outline:none;
+border: 1px solid #fff !important;
+}
+.resizable-textarea .grippie {   /****** this is for the re-sizing widget in the text area in  Contact webform **************/
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none;
+	position:relative;
+    border-color:none;
+    border-style:none;
+    border-width: none;
+    cursor: s-resize;
+    height: 9px;
+    overflow: hidden;
+	width:80%;
+}
+
+input.form-text{
+background:transparent;
+text-align:left;
+width: 50%;
+padding:0 10px;
+margin:0;
+float:left;
+line-height: 35px;
+height:35px;
+color:grey;
+border: 1px solid #000000 !important;
+   -moz-box-shadow:    inset 0 0 10px #00000 !important;
+	-webkit-box-shadow: inset 0 0 10px #000000 !important;
+    box-shadow:         inset 0 0 10px #000000 !important;
+    border-radius: 3px 3px !important; 
+   -moz-border-radius: 3px !important; 
+   -webkit-border-radius: 3px !important;
+   behavior:url(http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc) !important;  /* added this line so PIE.htc will work*/
+   background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/transBG.png) 0 0 repeat !important;
+   
+}
+input.form-text:hover {
+border: 1px solid grey;
+}
+input.form-text:focus {
+outline:none;
+border: 1px solid #fff !important;
+}
+ label {
+text-align:left;
+padding: 30px 0 10px 0;
+font-weight:normal;
+}
+/*********************************************************************
+wholesale styles
+********************************************************************/
+.wholesale-font{
+margin:0;
+padding:0;
+text-align:left;
+}
+.wholesale-font b  {
+color:#000000;
+font-family: Arial;
+font-size: 1.3em;
+}
+.wholesale-page {
+margin:0;
+padding:0;
+text-align:center;
+}
+.section-wholesale  h1 {
+text-align:center;
+}
+.wholesale-page img {
+margin:0 auto;
+}
+/********************************************************************************
+contact-us styles
+*******************************************************************************/
+.contact-img {
+position:absolute;
+margin:0;
+padding:0;
+top:30px;
+left:220px;
+}
+/********************************************************************************
+enter-here styles
+*******************************************************************************/
+#sidebar #put-here {
+position:absolute;
+z-index:80;
+margin:-15px 0 0 -20px;
+}
+#put-here a{
+text-decoration:none;
+}
+#put-here a:hover {
+opacity:.5;
+filter: alpha(opacity=25);
+}
+#put-here img:hover{
+opacity:.5;
+filter: alpha(opacity=25);
+}
+.enter-img {
+position:absolute;
+margin:0;
+padding:0;
+top:30px;
+left:180px;
+}
+/*******************************************************************************************
+Menu Page
+******************************************************************************************/
+.bagelMenuTable {
+position:relative;
+width:100%;
+margin: 30px 0 0 0;
+}
+.bagelMenuTable td {
+width: 20%;
+height: 100px;
+margin:0;
+padding:0;
+background: url(/bagelmania.com/sites/all/themes/zen/ashly/images/paper-icon2.png) center -17px no-repeat;
+}
+.bagelMenuTable td a {
+text-decoration:none;
+text-align:center;
+display:block;
+color:#806F52;
+}
+.bagelMenuTable td a:hover {
+text-decoration:underline;
+opacity:.5;
+filter: alpha(opacity=25);
+}
+td.bagelMenu {
+
+}
+td.bagelMenuToo {
+//background: yellow;
+}
+td.coffeeMenu {
+//: orange;
+}
+td.drinkMenu {
+//background: green;
+}
+td.mainMenu {
+//background: pink;
+}
+
+/************************************************************************************
+CLEARFIX
+*************************************************************************************/
+.clearfix:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
+.clearfix { display: inline-block; }
+.clearfix { display: block; zoom: 1; }
+
+
+/**************************************************************************************
+Misc. From System 
+*************************************************************************************/
+
+tbody {
+border:0;
+}
+tr.even, tr.odd {
+background:transparent;
+}
+// td.title-author {
+//display:none;
+//}
+p.submitted {
+margin: -15px  0 25px 0;
+font-style: italic;
+color:#795d36;
+font-size: .85em;
+}
+.node-author .username { /** this is used to get rid of author name in recent block, in right column **/
+display:none;
+}
+.profile .user-picture { /** this is for the image on the user page, don't really need it **/
+margin: -75px 1em 1em 0;
+}
+#content article.post img {  /** for images added to post **/
+margin: 0 0 15px;
+}
+
+

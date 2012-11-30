@@ -1,0 +1,76 @@
+#page-wrapper {
+background: transparent !;
+}
+
+
+#butter {
+height:800px;
+margin:0;
+padding:0;
+}
+#chickenface {
+height:500px;
+margin:0;
+padding:0;
+
+}
+#steven {
+position:relative;
+float:left;
+width:100%;
+margin:0;
+padding:0;
+//background: transparent;
+}
+.ashContent {
+text-align:center;
+}
+.ashContent input.form-text {
+float:none;
+}
+.helfrich {
+position:relative;
+margin:75px auto 0 auto;
+width:35%;
+padding:0;
+text-align:center;
+//background: blue;
+}
+
+.helfrich h1 {
+text-align:center;
+color: grey;
+margin-bottom: 15px;
+}
+/******************************************* for the input **************************************************/
+.form-item label {
+    display: block;
+    font-weight: bold;
+	color:grey;
+	text-align:center;
+	//margin-left: 70px;
+}
+.rounded {
+padding:10px;
+margin:0;
+border:0;
+height: 25px;
+-webkit-box-shadow: inset 0 6px 5px -6px black;
+-moz-box-shadow: inset    0 6px 5px -6px black;
+box-shadow: inset    0px 6px 5px -6px black;
+border-radius: 5px 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+behavior: url('http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc');
+position:relative;
+z-index: 100;
+ background: url(http://setdesign-la.com/bagelmania-images/transBG.png) 0 0 repeat;
+}
+#page-title img{
+border: 10px solid grey;
+border-radius: 5px 5px; 
+-moz-border-radius: 5px; 
+-webkit-border-radius: 5px; 
+behavior: url('http://localhost/bagelmania.com/sites/all/themes/zen/ashly/css/PIE.htc');
+}
+

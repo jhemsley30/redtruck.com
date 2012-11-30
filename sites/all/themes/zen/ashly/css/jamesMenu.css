@@ -1,0 +1,156 @@
+#listContainer5{
+		float:right;
+		position:relative;
+		width:500px;
+		margin: 75px 0 0 0;  /** this is for webDesign-zajack **/
+		padding:0;
+		clear:both
+		background: orange;
+		}
+		
+		#listTest5 {
+		position:relative;
+		margin:0 auto;
+		padding:0;
+		width: 500px;
+		background:grey;
+		clear: both;
+		}
+		#listTest5 a {   /** the a represents 5 menu tabs, occupying 20% even shares of its container (listTest) **/
+		position:relative;
+		float:left;
+		margin: 0 2% 0 0;
+		padding:0;
+		width: 18%;   /**JH width minus margin-right **/
+		height: 25px;
+		//top:180px;
+		text-align:center;
+		//background: red;
+		text-decoration:none;
+		}
+		#listTest5 ul {
+		margin:0;
+		padding:0;
+		}
+		#listTest5 a  li {
+		position:relative;
+		list-style:none;
+		//background: red;
+		padding: 0;
+		margin:0;
+		color: #000000;
+		color:#9ecced;
+		line-height:30px;
+		border-radius: 5px 5px; 
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		-khtml-border-radius: 5px;
+		behavior:url(http://theme-site:8082/sites/all/themes/zen/ashly/css/PIE.htc);
+		}
+		#listTest5 a  li:hover {
+		//background: url('/drupal-jimmy/sites/all/themes/zen/ashly/images/menuBG.png') 0 0 repeat;
+		color:#000000;
+		//font-weight:bold;
+		-webkit-box-shadow: inset 0 6px 5px -6px black;
+        -moz-box-shadow: inset    0 6px 5px -6px black;
+         box-shadow: inset    0px 6px 5px -6px black;
+		border-radius: 5px 5px; 
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		-khtml-border-radius: 5px;
+		behavior:url(http://theme-site:8082/sites/all/themes/zen/ashly/css/PIE.htc);
+		line-height:30px;
+		}
+		#listTest5 a li.active {
+		background: #2a2822;
+		-webkit-box-shadow: inset 0 6px 5px -6px black;
+        -moz-box-shadow: inset    0 6px 5px -6px black;
+        box-shadow: inset    0px 6px 5px -6px black;
+		color:#fff;
+		font-weight:bold;
+		border-radius: 5px 5px; 
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		-khtml-border-radius: 5px;
+		behavior:url(sites/all/themes/zen/ashly/css/PIE.htc);
+		line-height:30px;
+		}
+		#listTest5 a .drop {
+		position:relative;
+		left:0;
+		top:-250px;
+		width: 100%;
+		height:58px;
+		//display:none;
+		opacity:0;
+		font-family: Script MT Bold;
+		font-size: 17px;
+		color:#000000;
+		-webkit-transition: all 0.3s linear; 
+		-moz-transition: all 0.3s linear; 
+		-o-transition: all 0.3s linear; 
+		border-radius: 5px 5px; 
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		-khtml-border-radius: 5px;
+		behavior:url(http://theme-site:8082/sites/all/themes/zen/ashly/css/PIE.htc);
+		}
+		
+		
+        .homeLogo       { background: url(/zajack/sites/all/themes/zen/ashly/images/home2.png) center bottom no-repeat; }
+		.servicesLogo   { background: url(/zajack/sites/all/themes/zen/ashly/images/services2.png) center bottom no-repeat; }
+		.galleryLogo    { background:  url(/zajack/sites/all/themes/zen/ashly/images/gallery2.png) center bottom no-repeat; }
+		.blogLogo       { background:  url(/zajack/sites/all/themes/zen/ashly/images/blog2.png) center bottom no-repeat; }
+		.contactLogo     { background: url(/zajack/sites/all/themes/zen/ashly/images/contact2.png) center bottom no-repeat; }
+		
+		a:hover .homeLogo          { background:  url(/zajack/sites/all/themes/zen/ashly/images/home2.png) center bottom no-repeat; }
+		a:hover .servicesLogo   { background: url(/zajack/sites/all/themes/zen/ashly/images/services2.png) center bottom no-repeat; }
+		a:hover .galleryLogo     { background:  url(/zajack/sites/all/themes/zen/ashly/images/gallery2.png) center bottom no-repeat; }
+		a:hover .blogLogo          { background:  url(/zajack/sites/all/themes/zen/ashly/images/blog2.png) center bottom no-repeat; }
+		a:hover .contactLogo     { background:  url(/zajack/sites/all/themes/zen/ashly/images/contact2.png) center bottom no-repeat; }
+		
+		
+		
+		#listTest5 a:hover .drop {
+		//display: block;
+		opacity:1;
+		top: -95px;
+		height:58px;
+		color:#000000;
+		font-family: Script MT Bold;
+		font-size: 17px;
+		border-radius: 5px 5px; 
+		-moz-border-radius: 5px; 
+		-webkit-border-radius: 5px; 
+		-khtml-border-radius: 5px;
+		behavior:url(http://theme-site:8082/sites/all/themes/zen/ashly/css/PIE.htc);
+		}
+		#arrow  {
+		position:relative;
+		margin:0 auto;
+		padding:0;
+		width: 500px;
+		height:25px; /** added height so the menu doesnt push down when animating arrow **/
+		clear: both;
+		}
+		 #arrow p {
+		position:relative;
+		float:left;
+		margin: 0 2% 0 0;
+		padding:0;
+		width: 18%;   /**JH width minus margin-right **/
+		height: 25px;
+		text-align:center;
+		}
+		#arrow p.active {
+		position:relative;
+		float:left;
+		margin: 0 2% 0 0;
+		padding:0;
+		width: 18%;   /**JH width minus margin-right **/
+		height: 25px;
+		text-align:center;
+		// background: url('/drupal-jimmy/sites/all/themes/zen/ashly/images/arrow.png') center top no-repeat;
+		 z-index:100;
+		 display:none;
+		 }

@@ -1,0 +1,198 @@
+
+<div id="fadeHolder">
+	<div id="marissaFade"><img src='/jTest/sites/all/themes/zen/ashly/images/marissaZajack.jpg' alt=''</div><!-- END marissaFade -->
+</div><!-- END fadeHolder -->
+<div id="pagewrap">
+
+	<header id="header" class='clearfix'>
+
+		<hgroup>
+			<h1 id="site-logo"><a href="#">arissa Zajack</a></h1>
+			<h2 id="site-description">Graphic Artist</h2> 
+		</hgroup>
+
+		<nav>
+		
+			<ul id="main-nav" class="clearfix">
+				
+				<li><a href="http://themify.me">Themify          </a></li>
+				<li><a href="http://icondock.com">IconDock       </a></li>
+				<li><a href="http://ndesign-studio.com">N.Design </a></li>
+				<li><a href="http://webdesignerwall.com">Home    </a></li>
+			</ul> 
+			<!-- /#main-nav --> 
+		</nav>
+
+		
+	</header>
+	<!-- /#header -->
+	
+	<div id="content">
+
+
+
+		<article class="post clearfix">
+
+			
+	<!-------- JH added from jTest ---------------------------------------------->		
+			
+		<?php print render($page['highlighted']); ?>
+		<?php if ($tabs = render($tabs)): ?>
+                <div class="tabs"><?php print $tabs; ?></div>
+               <?php endif; ?>
+      
+                              <!-- <?php if ($title): ?>
+                <h1 class="title" id="page-title"><?php print $title; ?></h1>
+                <?php endif; ?> -->
+               <?php print render($title_suffix); ?>
+               <?php print render($page['content']); ?>
+			   
+<!--------------------------------------- Parallax -------------------------------------------------------------->
+<div id="da-slider" class="da-slider">
+				<div class="da-slide">
+					<h2>Easy management</h2>
+					<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="/jTest/sites/all/themes/zen/ashly/images/1s.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Revolution</h2>
+					<p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="/jTest/sites/all/themes/zen/ashly/images/2s.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Warm welcome</h2>
+					<p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="/jTest/sites/all/themes/zen/ashly/images/3s.jpg" alt="image01" /></div>
+				</div>
+				<div class="da-slide">
+					<h2>Quality Control</h2>
+					<p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+					<a href="#" class="da-link">Read more</a>
+					<div class="da-img"><img src="/jTest/sites/all/themes/zen/ashly/images/4s.jpg" alt="image01" /></div>
+				</div>
+				<nav class="da-arrows">
+					<span class="da-arrows-prev"></span>
+					<span class="da-arrows-next"></span>
+				</nav>
+			</div>    <!-- END slider -->
+        
+		
+<!------------------------------------------------------- END parallax --------------------------------->
+               		
+			
+			
+	<!-- END JH jTest ---------------------------------------------------------------->	
+
+        <div id="slideshow">
+		    <div id='fadeCaption'></div>
+			<div id="bottomCorner"></div>
+			<img src="sites/all/themes/zen/ashly/images/one.jpg" alt="Slideshow Image 1" class="active" />
+			<img src="sites/all/themes/zen/ashly/images/two.jpg" alt="Slideshow Image 2" />
+			<img src="sites/all/themes/zen/ashly/images/three.jpg" alt="Slideshow Image 3" />
+			<img src="sites/all/themes/zen/ashly/images/four.jpg" alt="Slideshow Image 4" />
+		</div>	
+			
+		
+		</article>
+		<!-- /.post -->
+
+	</div>
+	<!-- /#content --> 
+	
+	
+	<aside id="sidebar">
+	
+<section class="widget">
+			<h4 class="widgettitle">What's new</h4>	
+			<div id='top_column'>
+    <?php  print render($page['top_column']); ?>
+</div>
+</section>
+<!-- /.widget -->
+
+		<section class="widget">
+			<h4 class="widgettitle">What's new</h4>
+			<ul>
+				<li><a href="#">WordPress</a> (3)</li>
+				<li><a href="#">Design</a> (23)</li>
+				<li><a href="#">Design </a>(18)</li>
+			</ul>
+		</section>
+		<!-- /.widget -->
+
+		<section class="widget clearfix">
+			<h4 class="widgettitle">Flickr</h4>
+			<script type="text/javascript" src="http://www.flickr.com/badge_code_v2.gne?count=8.&display=latest&size=s&layout=x&source=user&user=52839779@N02"></script> 
+		</section>
+		
+		<section class="widget  clearfix">
+		<h4 class='widgettitle'>Portfolio</h4>
+		
+		<!--<img class='flickr_badge_image' src='/jTest/sites/all/themes/zen/ashly/images/1s.jpg' alt=' ' width='48px' height='48px'/>
+		<img class='flickr_badge_image' src='/jTest/sites/all/themes/zen/ashly/images/2s.jpg' alt=' ' width='48px' height='48px'/>
+		<img class='flickr_badge_image' src='/jTest/sites/all/themes/zen/ashly/images/3s.jpg' alt=' ' width='48px' height='48px'/>
+		<img class='flickr_badge_image' src='/jTest/sites/all/themes/zen/ashly/images/4s.jpg' alt=' ' width='48px' height='48px'/>
+		-->
+		<?php include('sites/all/themes/zen/ashly/includes/images.inc'); ?>
+		</section>
+		<section class="widget">
+			<h4 class="widgettitle">Bio</h4>
+			<img class='flickr_badge_image' src='/jTest/sites/all/themes/zen/ashly/images/zajack-pro.png' alt=''/>
+			<br/>
+			Marissa Zajack has been a professional graphic designer for well over 10 years. Please see the information
+			for more details.
+		</section>
+		<!-- /.widget -->
+						
+	</aside>
+	<!-- /#sidebar -->
+
+	<footer id="footer">
+	
+		<p>Marissa Zajack &copy; 2010. All rights reserved.</p>
+		
+     <!----------------------------- JH added jTest -------------------------------------------------->		
+		<p class='logIn'>
+	  <?php print theme('links__system_secondary_menu', array(
+      'links' => $secondary_menu,
+      'attributes' => array(
+        'id' => 'secondary-menu',
+        'class' => array('links', 'inline', 'clearfix'),
+      ),
+      'heading' => array(
+        'text' => $secondary_menu_heading,
+        'level' => 'h2',
+        'class' => array('element-invisible'),
+      ),
+    )); ?> 
+	<!-- this checks to see if user is logged in. If not, Log in link will display. -->
+	<?php $role = 'anonymous user';
+    if (in_array($role, $variables['user']->roles)) {
+    print "<a href='login'>Log In</a>";
+	}
+	?>
+  </p>
+<!---------------------------------- END jTest ------------------------------------------------------------>
+	</footer>
+	<!-- /#footer --> 
+	
+</div>
+<!-- /#pagewrap -->
+
+<script type="text/javascript" src="sites/all/themes/zen/ashly/js/jquery.cslider.js"></script>
+		<script type="text/javascript">
+		
+			$(function() {
+			
+				$('#da-slider').cslider({
+					autoplay	: true,
+					bgincrement	: 450
+				});
+			
+			});
+			
+		</script>	
+		

@@ -1,0 +1,14 @@
+<script type="text/javascript">
+jQuery(document).ready(function($){
+
+	/* prepend menu icon */
+	$('#main-nav ').prepend('<div id="menu-icon">Menu</div>');
+	
+	/* toggle nav */
+	$("#menu-icon").on("click", function(){
+		$(".region-zajack-menu").slideToggle();
+		$(this).toggleClass("active");
+	});
+
+});
+</script>
