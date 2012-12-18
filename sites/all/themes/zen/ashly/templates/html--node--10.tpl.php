@@ -15,7 +15,13 @@
 	<meta name = "viewport" content = "initial-scale = 1.0"> 
 	<link rel="stylesheet" href="sites/all/themes/zen/ashly/css/template-test.css" type="text/css" media="screen" /> 
 
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	 
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
+
+<!-- --------------------------- Touch Touch --------------------------------------------------- -->
+   	
+		 <link rel="stylesheet" href="sites/all/themes/zen/ashly/mobileGallery/assets/css/styles.css" />                 
+         <link rel="stylesheet" href="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.css" />    
+    	  
      <!-- ------------------------------ fade slideshow ---------------------------------------------- -->
 	<!-- <?php include('sites/all/themes/zen/ashly/includes/fade-slideshow.inc'); ?> -->
 	<link rel="stylesheet" href="sites/all/themes/zen/ashly/css/fade-slideshow.css" type="text/css" media="screen" /> 

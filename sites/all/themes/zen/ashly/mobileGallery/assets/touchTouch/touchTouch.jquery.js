@@ -14,6 +14,8 @@
 		slider = $('<div id="gallerySlider">'),
 		prevArrow = $('<a id="prevArrow"></a>'),
 		nextArrow = $('<a id="nextArrow"></a>'),
+		closeGallery = $('<a id="closeGallery"></a>'),
+		imageTitle = $('<div id="imageTitleContainer"> <div id="imageTitle"> </div> </div> '),
 		overlayVisible = false;
 		
 		
@@ -28,6 +30,7 @@
 		// Appending the markup to the page
 		overlay.hide().appendTo('body');
 		slider.appendTo(overlay);
+		imageTitle.appendTo(overlay);
 		
 		// Creating a placeholder for each image
 		items.each(function(){
@@ -81,6 +84,11 @@
 			// Find the position of this image
 			// in the collection
 			
+			var galleryName = $(this).attr('data-gallery');  // JH added these four lines to be able to do multiple galleries
+			if (galleryName) {                               //
+			items = $('[data-gallery='+galleryName+']');     //
+			}                                                //
+			
 			index = items.index(this);
 			showOverlay(index);
 			showImage(index);
@@ -131,6 +139,7 @@
 			if (overlayVisible){
 				return false;
 			}
+			$('html, body').animate({ scrollTop: 0 }, 0);  //JH added this line to fix height for android and older ios browser
 			
 			// Show the overlay
 			overlay.show();
@@ -161,6 +170,10 @@
 		function offsetSlider(index){
 			// This will trigger a smooth css transition
 			slider.css('left',(-index*100)+'%');
+			 var newTitle = items.eq(index).attr("title"); // JH added these two lines for title to show in overlay
+            imageTitle.html(newTitle);                     //
+			 
+			
 		}
 	
 		// Preload an image by its index in the items array
@@ -230,6 +243,14 @@
 				},500);
 			}
 		}
-	};
+		 //JH : hide the gallery on click on this div, JH added for window close icon. added var on line 17
+      closeGallery.appendTo(overlay); //
+      closeGallery.click(function(e){ //
+      hideOverlay();                  //
+      });                             //
+		
+		
+  };
+ 
 	
 })(jQuery);
