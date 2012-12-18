@@ -1,61 +1,336 @@
-a img.fade-title  {
-position:absolute;
-top:0;
-left:0;
-z-index: 80;
-}	
-a img.fade-title:hover  {
-opacity:.5;
-filter: alpha(opacity=25);
-}	
-#slideshow {
-    position:relative;
-	width: 100%;
-	max-width: 100%;
-	//height: 400px;	
-	display:block;
-	background: orange;
-	clear:both;
-	//height:300px;
-}
-h3.home {
-position:relative;
-font-family: Antic, arial;
-//margin-top: 66%;
-padding-bottom: 66%;
-color: #fff;
-}
-h3.home2 {
-position:relative;
-font-family: Antic, arial;
-margin-top: 61%;
-}
+ #slideContainer {
+ position: relative;
+ margin: 0 auto;
+ width: 70%; //59%;
+ padding:0;
+ overflow:hidden;
+} 
 
-#slideshow IMG {
+
+ #slideshow {
+    position:relative;
+	float:left;
+    margin: 0;
+	padding: 0;
+	width: 50%;      /** JH was 554px;  **/
+    height: 277px; 
+	display:block;
+	} 
+
+
+#slideshow  IMG  {
     position:absolute;
+	margin:0;
+	padding:0;
+	width: 100%;
+	//height: 277px; 
+	background: #b29f7f url(http://setdesign-la.com/redtruck-images/background.jpg) repeat;
     top:0;
     left:0;
     z-index:8;
-    opacity:0.0;
-	                    //height:auto;
-	                    //width: 100%;
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /* ie8 */
-	border: 1px solid #dad1d1;
+    opacity: 0;
+	overflow:hidden;  /** ******************* JH added this if using transitions, hide outside of dive **/
+	
 }
-
-#slideshow IMG.active {
+#slideshow  IMG.active   {
     z-index:10;
-    opacity:1.0;
-	                  //height:400px;
-	                  //width: 700px;
-	max-width: 100%;
-	height: auto;
-	width: auto\9; /* ie8 */
-	//border: 1px solid #dad1d1;
+    opacity: 1;
+
 }
 
-#slideshow IMG.last-active {
+#slideshow  IMG.last-active  {
     z-index:9;
+	//opacity: 1;
 }
+
+/** ###############################################################################################
+	TRANSITIONS WITH FADE SLIDESHOW TEST
+	############################################################################################### **/
+ 
+    .moveTitleLayout {
+     z-index: 50;
+     top:50px;
+     left:-220px;
+     position: absolute;
+     font-size: 25px;
+	 font-weight:bold;
+     color: #ffffff;
+	//height: 80px;
+	 width: 200px;
+	 padding: 10px;
+	 text-align:center;
+	 background: url(http://www.setdesign-la.com/bagelmania-images/transparent.png) 0 0 repeat;	;	
+      }
+	  
+	  .moveTitle {
+	 -webkit-animation: moveTitle   5s ease-in-out    2s   1  ;
+      -moz-animation:   moveTitle   5s ease-in-out    2s   1  ;
+           animation:   moveTitle   5s ease-in-out    2s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	   .moveTitle2 {
+	 -webkit-animation: moveTitle   5s ease-in-out    8s   1  ;
+      -moz-animation:   moveTitle   5s ease-in-out    8s   1  ;
+           animation:   moveTitle   5s ease-in-out    8s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	   .moveTitle3 {
+	 -webkit-animation: moveTitle   5s ease-in-out    14s   1  ;
+      -moz-animation:   moveTitle   5s ease-in-out    14s   1  ;
+           animation:   moveTitle   5s ease-in-out    14s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	   .moveTitle4 {
+	 -webkit-animation: moveTitle   5s ease-in-out    20s   1  ;
+      -moz-animation:   moveTitle   5s ease-in-out    20s   1  ;
+           animation:   moveTitle   5s ease-in-out    20s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	
+  .moveContentLayout
+   {
+     z-index: 50;
+     top: 105px;
+     left: -220px;
+     position: absolute;
+     font-size: 12px;
+    color: white;
+	//height: 80px;
+	width: 200px;
+	padding: 10px;
+	margin:0;
+	text-align:center;
+	background: url(http://www.setdesign-la.com/redtruck-images/transparent2.png) 0 0 repeat;	
+    }
+	p.moveContent  {
+	top:140px;
+	-webkit-animation:  moveContent   5s ease-in-out    2s   1  ;
+      -moz-animation:   moveContent   5s ease-in-out    2s   1  ;
+           animation:   moveContent   5s ease-in-out    2s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	   .moveContent2 {
+	-webkit-animation:  moveContent   5s ease-in-out    8s   1  ;
+      -moz-animation:   moveContent   5s ease-in-out    8s   1  ;
+           animation:   moveContent   5s ease-in-out    8s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	   .moveContent3 {
+	 -webkit-animation: moveContent   5s ease-in-out    14s   1  ;
+      -moz-animation:   moveContent   5s ease-in-out    14s   1  ;
+           animation:   moveContent   5s ease-in-out    14s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	   .moveContent4 {
+	   
+	  -webkit-animation: moveContent   5s ease-in-out    20s   1  ;
+      -moz-animation:    moveContent   5s ease-in-out    20s   1  ;
+           animation:    moveContent   5s ease-in-out    20s   1  ;
+	   /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	   }
+	
+	
+	
+	/** Final Image or text to be shown on right side **/
+	.defaultImage {                             /** this class is for Title to be shown after the transitions **/
+	position: absolute;	
+	top: 50px;
+	left: 55%;	
+	padding: 0 0 20px;
+	z-index: 50;
+	color: #806F52;
+	opacity: 0;	
+	font-size: 32px;
+	font-family:Bowlby One;
+	-webkit-animation: lastImage 2s  25s  1         forwards;
+      -moz-animation:  lastImage 2s  25s  1         forwards;
+           animation:  lastImage 2s  25s  1         forwards;
+        /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
+	background: url(http://www.setdesign-la.com/redtruck-images/stroke.png) 0 bottom no-repeat;
+	}
+	.defaultImage2 {   /** this class is for a browser that doesn't support transitions/css3 **/
+	position: absolute;
+	top:50px;
+	left:55%;
+	z-index: 50;
+	color: #806F52;
+	display:block;
+	opacity: 0;
+	-webkit-animation: lastImage2 2s  0s  1         forwards;
+      -moz-animation:  lastImage2 2s  0s  1         forwards;
+           animation:  lastImage2 2s  0s  1         forwards;
+	}
+	
+
+/**   -------------------------------- KEYFRAMES FOR FADE SLIDESHOW CONTENT AND TITLE --------------------------------------- **/	
+	
+@-webkit-keyframes moveTitle {
+		0% {
+		left: -100%;
+	}
+	20% {
+	left: 55%;
+	}
+	95% {
+	left: 55%;
+	}
+	
+	100% {
+		left: 200%;
+	}
+}
+@-moz-keyframes moveTitle {
+
+	0% {
+		left: -100%;
+	}
+	20% {
+	left: 55%;
+	}
+	95% {
+	left: 55%;
+	}
+	
+	100% {
+		left: 200%;
+	}
+}
+@keyframes moveTitle {
+	
+		0% {
+		left: -100%;
+	}
+	20% {
+	left: 55%;
+	}
+	95% {
+	left: 55%;
+	}
+	
+	100% {
+		left: 200%;
+	}
+}
+
+/** *****************  Content part ************************************/
+
+@-webkit-keyframes moveContent {
+	0% {
+		left: 100%;
+	}
+	15% {
+	left: 55%;
+	}
+	95% {
+	left: 55%;
+	}
+	100% {
+		left: -100%;
+	}
+}
+@-moz-keyframes moveContent {
+   0% {
+		left: 100%;
+	}
+	15% {
+	left: 55%;
+	}
+	95% {
+	left: 55%;
+	}
+	100% {
+		left: -100%;
+	}
+}
+@keyframes moveContent {
+	
+    0% {
+		left: 100%;
+	}
+	15% {
+	left: 55%;
+	}
+	95% {
+	left: 55%;
+	}
+	100% {
+		left: -100%;
+	}
+}
+
+/** ********************************************** default image or text ******************************************************************** **/
+@-webkit-keyframes lastImage {
+		0% {
+		opacity:0;
+		-webkit-transition: opacity;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@-moz-keyframes lastImage {
+
+			0% {
+		opacity:0;
+		-moz-transition: opacity;
+		
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@keyframes lastImage {
+	
+			0% {
+		opacity:0;
+		transition: opacity;
+	}
+	
+	100% {
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes lastImage2 {
+		0% {
+		opacity:0;
+		-webkit-transition: opacity;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+@-moz-keyframes lastImage2 {
+
+			0% {
+		opacity:0;
+		-moz-transition: opacity;
+		
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+@keyframes lastImage2 {
+	
+			0% {
+		opacity:0;
+		transition: opacity;
+	}
+	
+	100% {
+		opacity: 0;
+	}
+}
+
+
+
+
