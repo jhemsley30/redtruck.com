@@ -77,67 +77,49 @@
 		<div class='contact'>Red Truck Inc.<br/>1300 N. Grand St.<br/>Los Angeles, Cakifornia 90046</div>
    </div><!-- END content2 -->
    
-   
-   	<!-- ##################################################################################################################### 
-	     JH this is the content section that can be edited on interface page 
-		 ##################################################################################################################### -->		
-		<?php print render($page['highlighted']); ?>
-		<?php if ($tabs = render($tabs)): ?>
-                <div class="tabs"><?php print $tabs; ?></div>
-               <?php endif; ?>
-      
-                               <?php if ($title): ?>
-                <h1 class="title" id="page-title"><?php print $title; ?></h1>
-                <?php endif; ?>
-               
-               <?php print render($page['content']); ?>	
-	<!-- ######################################################################################################################
-         END of page content entered in page
-         ###################################################################################################################### -->
-
-		 
-		 
 </div> <!-- pagewrapRT --> 
 	
 	
 	
 
         
-	<footer id="footer">
-	 <div class='contentBorder'></div>
-		<p>Red Truck Inc. is located in Los Angeles, Ca. Red Truck &copy; 2012</p>
+	<div id="footer">
+	    <div class='footerInside clearfix' >
+			<div class='bottomMenu'>
+				<div class='footerHome     bottomMenuInside'><a href='home'>Home         </a></div>
+				<div class='footerAbout    bottomMenuInside'><a href='about'>About       </a></div>
+				<div class='footerWork     bottomMenuInside'><a href='work'>Work         </a></div>
+				<div class='footerContact  bottomMenuInside'><a href='contact'>Contact   </a></div>
+			</div><!-- END bottomMenu -->
+			
+			<div class='clearfix'></div><!-- for clearing -->
 		
-     <!----------------------------- JH added jTest -------------------------------------------------->		
-		<p class='logIn'>
-	  <?php print theme('links__system_secondary_menu', array(
-      'links' => $secondary_menu,
-      'attributes' => array(
-        'id' => 'secondary-menu',
-        'class' => array('links', 'inline', 'clearfix'),
-      ),
-      'heading' => array(
-        'text' => $secondary_menu_heading,
-        'level' => 'h2',
-        'class' => array('element-invisible'),
-      ),
-    )); ?> 
-	<!-- this checks to see if user is logged in. If not, Log in link will display. -->
-	<?php $role = 'anonymous user';
-    if (in_array($role, $variables['user']->roles)) {
-    print "<a href='login'>Log In</a>";
-	}
-	?>
-  </p>
-<!---------------------------------- END jTest ------------------------------------------------------------>
-	</footer>
-	<!-- /#footer --> 
+		<p>Red Truck &copy; 2012. Red Truck Inc. is located in Los Angeles, Ca.</p>
+		
+			<!----------------------------- JH added jTest -------------------------------------------------->		
+				<p class='logIn'>
+				<?php print theme('links__system_secondary_menu', array(
+				'links' => $secondary_menu,
+				'attributes' => array(
+				'id' => 'secondary-menu',
+				'class' => array('links', 'inline', 'clearfix'),
+				),
+				'heading' => array(
+				'text' => $secondary_menu_heading,
+				'level' => 'h2',
+				'class' => array('element-invisible'),
+				),
+				)); ?> 
+				<!-- this checks to see if user is logged in. If not, Log in link will display. -->
+				<?php $role = 'anonymous user';
+				if (in_array($role, $variables['user']->roles)) {
+				print "<a href='login'>Log In</a>";
+				}
+				?>
+				</p>
+     </div><!-- END footerInside -->
+
+  </div> <!-- /#footer --> 
 	
-</div><!-- END pagewrap -->
 
-<script>
-
-      $(document).ready(function() {
-		$(".fancybox").fancybox();
-	});
-	</script> 
  
