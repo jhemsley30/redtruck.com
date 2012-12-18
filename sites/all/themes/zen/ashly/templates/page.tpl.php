@@ -88,6 +88,11 @@
 				<div class='footerWork     bottomMenuInside'><a href='work'>Work         </a></div>
 				<div class='footerContact  bottomMenuInside'><a href='contact'>Contact   </a></div>
 			</div><!-- END bottomMenu -->
+			<div class='bottomMenuRight'>
+				<img src='http://www.setdesign-la.com/redtruck-images/footer-r.png' />
+				<img src='http://www.setdesign-la.com/redtruck-images/footer-d.png' />
+			                           
+			</div><!-- END bottomMenuRight -->
 			
 			<div class='clearfix'></div><!-- for clearing -->
 		
