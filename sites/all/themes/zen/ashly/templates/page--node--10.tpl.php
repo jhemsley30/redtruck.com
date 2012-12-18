@@ -11,6 +11,7 @@
   <div class="content1 clearfix">
 		<div class="content1-one">
 		   <div id='slideContainer'>
+		     <p class='startingImage'></p><!-- END startingImage -->
 		     <p class='defaultImage'>We.<br/>Build.<br/>Imagination.</p>
 			 <p class='defaultImage2'>We.<br/>Build.<br/>Imagination.</p>
 			 <div id="slideshow">
