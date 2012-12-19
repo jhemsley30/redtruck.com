@@ -35,10 +35,16 @@
   <script src="http://localhost:2375/redtruck.com/misc/jquery.js?v=1.4.4"></script>
 <script src="http://localhost:2375/redtruck.com/misc/jquery.once.js?v=1.2"></script>
 <script src="http://localhost:2375/redtruck.com/misc/drupal.js?mfah8i"></script>
+<script src="http://localhost:2375/redtruck.com/misc/jquery.cookie.js?v=1.0"></script>
+<script src="http://localhost:2375/redtruck.com/misc/jquery.form.js?v=2.52"></script>
+<script src="http://localhost:2375/redtruck.com/misc/ajax.js?v=7.17"></script>
 <script src="http://localhost:2375/redtruck.com/sites/all/modules/contrib/ctools/js/auto-submit.js?mfah8i"></script>
+<script src="http://localhost:2375/redtruck.com/sites/all/modules/contrib/views/js/base.js?mfah8i"></script>
+<script src="http://localhost:2375/redtruck.com/misc/progress.js?v=7.17"></script>
+<script src="http://localhost:2375/redtruck.com/sites/all/modules/contrib/views/js/ajax_view.js?mfah8i"></script>
 <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
 <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/redtruck.com\/","pathPrefix":"","ajaxPageState":{"theme":"ashly","theme_token":"OUX_B5MK0WYw7D9DxgwgDj24SPlqR2LxrtTDWefdTnw","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/auto-submit.js":1,"http:\/\/html5shim.googlecode.com\/svn\/trunk\/html5.js":1,"http:\/\/css3-mediaqueries-js.googlecode.com\/svn\/trunk\/css3-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/zen\/system.menus.css":1,"sites\/all\/themes\/zen\/ashly\/css\/template-test.css":1,"sites\/all\/themes\/zen\/ashly\/css\/iefix.css":1}},"better_exposed_filters":{"bef_datepicker":false}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/redtruck.com\/","pathPrefix":"","ajaxPageState":{"theme":"ashly","theme_token":"gGsDyJTlqJnbEVBnHpOxzVwcPrip0HzRydJUgeCATkM","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/jquery.cookie.js":1,"misc\/jquery.form.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/contrib\/ctools\/js\/auto-submit.js":1,"sites\/all\/modules\/contrib\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/contrib\/views\/js\/ajax_view.js":1,"http:\/\/html5shim.googlecode.com\/svn\/trunk\/html5.js":1,"http:\/\/css3-mediaqueries-js.googlecode.com\/svn\/trunk\/css3-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/zen\/system.menus.css":1,"sites\/all\/themes\/zen\/ashly\/css\/template-test.css":1,"sites\/all\/themes\/zen\/ashly\/css\/iefix.css":1}},"views":{"ajax_path":"\/redtruck.com\/views\/ajax","ajaxViews":{"views_dom_id:2df200447cdbf920781a573af463d6a1":{"view_name":"rt_filter","view_display_id":"block","view_args":"","view_path":"rt-gallery1","view_base_path":"rt-filter","view_dom_id":"2df200447cdbf920781a573af463d6a1","pager_element":0}}}});</script>
   
   <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Handlee' rel='stylesheet' type='text/css'><!-- google fonts -->
   <!-- <meta name = "viewport" content = "initial-scale = 1.0">  --><!-- this was used on touchtouch demo -->
@@ -111,7 +117,6 @@ $(function() {
 
       
   <ul class="menu"><li class="first leaf"><a href="/redtruck.com/template-test" title="Template Test">Home</a></li>
-<li class="leaf"><a href="/redtruck.com/fade-slideshow" title="">Work</a></li>
 <li class="leaf"><a href="/redtruck.com/fancybox" title="">About</a></li>
 <li class="leaf"><a href="/redtruck.com/flex-slider" title="">Clients</a></li>
 <li class="last leaf"><a href="/redtruck.com/gallery20" title="">Contact</a></li>
@@ -131,7 +136,7 @@ $(function() {
                
 
 
-<div class="view view-rt-gallery1 view-id-rt_gallery1 view-display-id-page view-dom-id-346b9094bf6ac7eabaee42515297f3b0">
+<div class="view view-rt-gallery1 view-id-rt_gallery1 view-display-id-page view-dom-id-20493146c53e3c19e130dc6159ace8ca">
         
   
   
@@ -151,52 +156,36 @@ $(function() {
 <!-- region__no_wrapper -->
 	
 			     <div class="region region-rt-region">
-    <div id="block-views-rt-category-block" class="block block-views first odd">
+    <div id="block-views-rt-filter-block" class="block block-views first last odd">
 
-        <h2 class="block-title">Gallery Category</h2>
+        <h2 class="block-title">rt-filter</h2>
     
-  <div class="view view-rt-category view-id-rt_category view-display-id-block view-dom-id-e6564e6b78741807c63ae59a2736a027">
+  <div class="view view-rt-filter view-id-rt_filter view-display-id-block view-dom-id-2df200447cdbf920781a573af463d6a1">
         
-  
-  
-      <div class="view-content">
-        <div class="views-row views-row-1 views-row-odd views-row-first">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/redtruck.com/rt-gallery3">Red Truck Third Gallery</a></span>  </div>  </div>
-  <div class="views-row views-row-2 views-row-even">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/redtruck.com/rt-gallery2">Red Truck Second Gallery</a></span>  </div>  </div>
-  <div class="views-row views-row-3 views-row-odd views-row-last">
-      
-  <div class="views-field views-field-title">        <span class="field-content"><a href="/redtruck.com/rt-gallery1" class="active">Red Truck First Gallery</a></span>  </div>  </div>
-    </div>
-  
-  
-  
-  
-  
-  
-</div>
-</div><!-- /.block -->
-<div id="block-views-exp-jh-filter-page" class="block block-views last even">
-
-      
-  <form class="ctools-auto-submit-full-form" action="/redtruck.com/jh-filter" method="get" id="views-exposed-form-jh-filter-page" accept-charset="UTF-8"><div><div class="views-exposed-form">
+      <div class="view-filters">
+      <form class="ctools-auto-submit-full-form" action="/redtruck.com/rt-filter" method="get" id="views-exposed-form-rt-filter-block" accept-charset="UTF-8"><div><div class="views-exposed-form">
   <div class="views-exposed-widgets clearfix">
-          <div id="edit-field-gallery-name-value-wrapper" class="views-exposed-widget views-widget-filter-field_gallery_name_value">
-                  <label for="edit-field-gallery-name-value">
-            Gallery Name (field_gallery_name)          </label>
+          <div id="edit-field-category-value-wrapper" class="views-exposed-widget views-widget-filter-field_category_value">
                         <div class="views-widget">
-          <div class="form-item form-type-select form-item-field-gallery-name-value">
- <select id="edit-field-gallery-name-value" name="field_gallery_name_value" class="form-select"><option value="All">- Any -</option><option value="rt-gallery1" selected="selected">rt-gallery1</option><option value="rt-gallery2">rt-gallery2</option><option value="rt-gallery3">rt-gallery3</option><option value="rt-gallery4">rt-gallery4</option><option value="rt-gallery5">rt-gallery5</option><option value="rt-gallery6">rt-gallery6</option><option value="rt-gallery7">rt-gallery7</option><option value="rt-gallery8">rt-gallery8</option><option value="rt-gallery9">rt-gallery9</option><option value="rt-gallery10">rt-gallery10</option></select>
+          <div class="form-item form-type-select form-item-field-category-value">
+ <select id="edit-field-category-value" name="field_category_value" class="form-select"><option value="All" selected="selected">- Any -</option><option value="Print Work">Print Work</option><option value="Commercials">Commercials</option><option value="Movies">Movies</option></select>
 </div>
         </div>
               </div>
                     <div class="views-exposed-widget views-submit-button">
-      <input class="ctools-use-ajax ctools-auto-submit-click js-hide form-submit" type="submit" id="edit-submit-jh-filter" name="" value="Apply" />    </div>
+      <input class="ctools-use-ajax ctools-auto-submit-click js-hide form-submit" type="submit" id="edit-submit-rt-filter" name="" value="Apply" />    </div>
       </div>
 </div>
-</div></form>
+</div></form>    </div>
+  
+  
+  
+  
+  
+  
+  
+  
+</div>
 </div><!-- /.block -->
   </div><!-- /.region -->
 		
@@ -299,4 +288,4 @@ $(function() {
  
    </body>
 </html>
-<!-- Page cached by Boost @ 2012-12-19 10:22:48, expires @ 2012-12-19 11:22:48, lifetime 1 hour -->
+<!-- Page cached by Boost @ 2012-12-19 12:37:42, expires @ 2012-12-19 13:37:42, lifetime 1 hour -->
