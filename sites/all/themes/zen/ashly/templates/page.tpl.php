@@ -21,10 +21,12 @@
                 <?php endif; ?>
                
                <?php print render($page['content']); ?>	
-	
+			   <?php print render($page['rt_region']); ?>
+		
 	
 	
 	 </div><!-- END content1-one -->	
+
    </div> <!-- END content1 -->
    <div class='content2 clearfix'>
         <div class='ourServices'>Our Services</div>
@@ -71,7 +73,12 @@
 			
 		</div>
 		<div class='ourServices'>Contact</div>
-		<div class='contact'>Red Truck Inc.<br/>1300 N. Grand St.<br/>Los Angeles, Cakifornia 90046</div>
+		<div class='contact'>
+			<b>Location:</b> Red Truck Inc. 1300 N. Grand St. Los Angeles, Cakifornia 90046<br/> <br/>
+			<b>Phone:</b> 888.256.2111<br/><br/>
+			<b>Email:</b> <a href='contact'>Contact Form</a> or <a href="mailto:someone@example.com?Subject=Hello">Send Here</a>
+		
+		</div>
    </div><!-- END content2 -->
    
 </div> <!-- pagewrapRT --> 

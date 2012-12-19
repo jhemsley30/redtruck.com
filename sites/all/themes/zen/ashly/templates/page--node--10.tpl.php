@@ -75,7 +75,12 @@
 			
 		</div>
 		<div class='ourServices'>Contact</div>
-		<div class='contact'>Red Truck Inc.<br/>1300 N. Grand St.<br/>Los Angeles, Cakifornia 90046</div>
+		<div class='contact'>
+			<b>Location:</b> Red Truck Inc. 1300 N. Grand St. Los Angeles, Cakifornia 90046<br/> <br/>
+			<b>Phone:</b> 888.256.2111<br/><br/>
+			<b>Email:</b> <a href='contact'>Contact Form</a> or <a href="mailto:someone@example.com?Subject=Hello">Send Here</a>
+		
+		</div>
    </div><!-- END content2 -->
    
 </div> <!-- pagewrapRT --> 
@@ -86,13 +91,17 @@
         
 	<div id="footer">
 	    <div class='footerInside clearfix' >
-			<div class='bottomMenu'>
+		<div class='bottomMenu'>
 				<div class='footerHome     bottomMenuInside'><a href='home'>Home         </a></div>
 				<div class='footerAbout    bottomMenuInside'><a href='about'>About       </a></div>
 				<div class='footerWork     bottomMenuInside'><a href='work'>Work         </a></div>
 				<div class='footerContact  bottomMenuInside'><a href='contact'>Contact   </a></div>
 			</div><!-- END bottomMenu -->
-			<div class='bottomMenuRight'><img src='http://www.setdesign-la.com/redtruck-images/footer-r.png/></div><!-- END bottomMenuRight -->
+			<div class='bottomMenuRight'>
+				<img src='http://www.setdesign-la.com/redtruck-images/footer-r.png' />
+				<img src='http://www.setdesign-la.com/redtruck-images/footer-d.png' />
+			                           
+			</div><!-- END bottomMenuRight -->
 			
 			<div class='clearfix'></div><!-- for clearing -->
 		

@@ -9,22 +9,15 @@
   <?php print $scripts; ?>
   
   <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Handlee' rel='stylesheet' type='text/css'><!-- google fonts -->
-  <!-- <link rel="shortcut icon" href="/zajack.com/sites/all/themes/zen/ashly/mz.ico"  /> -->
-  <!-- <meta name="viewport" content="width=device-width; initial-scale=1.0">  -->
-   <!--   <meta name="viewport" content="width=1024"> -->
-	<meta name = "viewport" content = "initial-scale = 1.0"> 
-	<link rel="stylesheet" href="sites/all/themes/zen/ashly/css/template-test.css" type="text/css" media="screen" /> 
+  <!-- <meta name = "viewport" content = "initial-scale = 1.0">  --><!-- this was used on touchtouch demo -->
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">  
 
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
 
-<!-- --------------------------- Touch Touch --------------------------------------------------- -->
-   	
-		 <link rel="stylesheet" href="sites/all/themes/zen/ashly/mobileGallery/assets/css/styles.css" />                 
-         <link rel="stylesheet" href="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.css" />    
-    	  
-     <!-- ------------------------------ fade slideshow ---------------------------------------------- -->
-	<!-- <?php include('sites/all/themes/zen/ashly/includes/fade-slideshow.inc'); ?> -->
-	<link rel="stylesheet" href="sites/all/themes/zen/ashly/css/fade-slideshow.css" type="text/css" media="screen" /> 
+
+     <!-- ------------------------------ fade slideshow js include ---------------------------------------------- -->
+	                 <!-- <?php include('sites/all/themes/zen/ashly/includes/fade-slideshow.inc'); ?> -->
+	
 	
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>

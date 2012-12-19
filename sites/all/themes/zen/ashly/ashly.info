@@ -22,11 +22,12 @@ base theme  = zen
 ; useful feature. See the excellent Drupal 7 Theme Guide at
 ; http://drupal.org/node/263967 for more details.
 
-stylesheets[all][]        = css/jamesMenu.css
-stylesheets[all][]        = css/webDesign.css
-stylesheets[all][]        = css/media.css     
-stylesheets[all][]        = mobileGallery/assets/css/styles.css 
-stylesheets[all][]        = mobileGallery/assets/touchTouch/touchTouch.css
+;stylesheets[all][]        = css/jamesMenu.css
+;stylesheets[all][]        = css/webDesign.css
+;stylesheets[all][]        = css/media.css     
+;stylesheets[all][]        = mobileGallery/assets/css/styles.css 
+;stylesheets[all][]        = mobileGallery/assets/touchTouch/touchTouch.css
+stylesheets[all][]        = css/template-test.css
 
 
 
@@ -65,6 +66,7 @@ regions[poll_question]   = Poll Question
 regions[bagelmania_menu] = Bagelmania Menu
 regions[news_feed]       = News Feed
 regions[james_login]     = James Login
+regions[rt_region]     = RT Region
 
 
 ; Various page elements output by the theme can be toggled on and off. The

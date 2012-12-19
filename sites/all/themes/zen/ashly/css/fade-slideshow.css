@@ -142,9 +142,9 @@
 	opacity: 0;	
 	font-size: 32px;
 	font-family:Bowlby One;
-	-webkit-animation: lastImage 2s  25s  1         forwards;
-      -moz-animation:  lastImage 2s  25s  1         forwards;
-           animation:  lastImage 2s  25s  1         forwards;
+	-webkit-animation: lastImage 2s  26s  1         forwards;
+      -moz-animation:  lastImage 2s  26s  1         forwards;
+           animation:  lastImage 2s  26s  1         forwards;
         /** animation: <name> <duration> <timing-function> <delay> <iteration-count> <direction> <fill-mode>; **/
 	background: url(http://www.setdesign-la.com/redtruck-images/stroke.png) 0 bottom no-repeat;
 	}
