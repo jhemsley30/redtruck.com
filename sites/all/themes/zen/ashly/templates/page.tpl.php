@@ -129,11 +129,9 @@
      </div><!-- END footerInside -->
 
   </div> <!-- /#footer --> 
-	<script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
- <script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
- <script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js">
- </script>
-
+	  <!-- JavaScript includes - jQuery, turn.js and our own script.js -->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://www.setdesign-la.com/jh-scripts/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
+		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js"></script>
  
  

@@ -32,10 +32,14 @@ stylesheets[all][]        = css/template-test.css
 
 
 
+scripts[] = https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+scripts[] = mobileGallery/assets/touchTouch/touchTouch.jquery.js
+scripts[] = mobileGallery/assets/js/script.js
+
 ; Optionally add some JavaScripts to your theme.
 
 
-;scripts[] = https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js
+
 
 ;scripts[] = js/jquery.js
 

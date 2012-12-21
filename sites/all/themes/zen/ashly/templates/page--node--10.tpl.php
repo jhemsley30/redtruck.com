@@ -11,9 +11,9 @@
   <div class="content1 clearfix">
 		<div class="content1-one">
 		   <div id='slideContainer'>
-		     <p class='startingImage'></p><!-- END startingImage -->
-		     <p class='defaultImage'>We.<br/>Build.<br/>Imagination.</p>
-			 <p class='defaultImage2'>We.<br/>Build.<br/>Imagination.</p>
+		     <p class='startingImage'>                                 </p><!-- END startingImage -->
+		     <p class='defaultImage'>We.<br/>Build.<br/>Imagination.   </p><!-- END defaultImage -->
+			 <p class='defaultImage2'>We.<br/>Build.<br/>Imagination.  </p><!-- END defaultIMage2 -->
 			 <div id="slideshow">
 		   		  <img src="http://setdesign-la.com/redtruck-images/truck-s.png"  alt="Red Truck" title='Red Truck' class="active" /> 
 		     </div>	<!-- end slideshow -->
@@ -131,10 +131,11 @@
      </div><!-- END footerInside -->
 
   </div> <!-- /#footer --> 
-	<script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
- <script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
- <script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js">
- </script>
+
+ 
+        <!-- JavaScript includes - jQuery, turn.js and our own script.js -->
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
+		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js"></script>
 
  
