@@ -306,7 +306,11 @@ position: relative;
 margin: 0 auto;
 width: 60%;
 }
-
+.content1-two {
+position: relative;
+margin: 0 auto;
+width: 60%;
+}
 /** *************************************************
 content2
 **************************************************** **/
@@ -763,20 +767,60 @@ margin: 0 0 10px;
  /** #################################################################################################################
      VIEW STYLES
 	 ################################################################################################################# **/
-	 .jh-viewTitle {
-	 position: relative;
-	 margin:0 ;
-	 padding:0;
-	 text-align:center;
-	 color: #806F52;
-	 font-size: 25px;
-	 width:100%;
 	 
+	 .jh-viewTitle  { 
+  position:relative;
+  margin: 65px auto 65px auto;
+  padding:5px 1% 5px ;
+  width:58%;
+  color: #806F52; 
+  font-size: 25px;
+  }
+   
+	.views-field-title  {
+	 text-align:left;
+	 margin: 0 0 65px;
+	 border-bottom: 1px solid #806F52;
+	 padding:5px 1% 5px ;
+  -webkit-box-shadow: 0 4px 5px -5px #645740;
+  -moz-box-shadow:    0 4px 5px -5px #645740;
+   box-shadow:        0 4px 5px -5px #645740;
 	 }
-	.views-field-title {
-	 text-align:center;
-	 margin: 0 0 15px;
-	 }
+	 
+/** These styles below are all for the rt-category block in views ************************************************************** **/
+
+#block-views-rt-category-block h2  {       /** this is for the category block heading style for h2 **/
+padding: 5px 3px;
+margin: 0 0 10px;
+}
+ 
+ .view-rt-category .views-field-title  {  /** this is for category block, resets all the field items used in other views **/
+ margin:0;
+ padding:0;
+ border-bottom:none;
+ -webkit-box-shadow: none;
+  -moz-box-shadow:   none;
+   box-shadow:       none;
+ }
+ .categoryCategoryPage {            /** this is for the category type, below category title in category block **/
+ font-style:italic;
+ font-size:.85em;
+ }
+ .jh-categoryTitle a {              /** This is for the category title in the category block **/
+ color: #806F52;
+ }
+ .view-rt-category .views-row {    /** this is for the rows of the category list block (aka "rt-category" in views). **/
+// background: #dbd9d8;
+ border-bottom: 1px solid #dbd9d8;
+ border-right: 1px solid grey;
+ padding: 3px ;
+ margin: 0 0 10px;
+ }
+ .page-rt-category .content1-one h1 {  /** this is for h1 styling on rt-category view **/
+ background: url("http://www.setdesign-la.com/redtruck-images/gallery3.png") no-repeat scroll 0 center transparent;
+ padding:    0 0 0 30px;
+ margin: 0 0 10px;
+ }
  
  
 

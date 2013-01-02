@@ -9,7 +9,7 @@
 
 <div id="pagewrapRT">
   <div class="content1 clearfix">
-		<div class="content1-one">
+		<div class="content1-one clearfix">
 		  <!-------- JH this is the content section that can be edited on interface page -------------------->		
 		<?php print render($page['highlighted']); ?>
 		<?php if ($tabs = render($tabs)): ?>
@@ -21,11 +21,11 @@
                 <?php endif; ?>
                
                <?php print render($page['content']); ?>	
-			   <?php print render($page['rt_region']); ?>
-		
-	
-	
-	 </div><!-- END content1-one -->	
+
+	 </div><!-- END content1-one -->
+     <div class='content1-two'>
+	 <?php print render($page['rt_region']); ?>
+	</div><!-- END content1-two -->
 
    </div> <!-- END content1 -->
    <div class='content2 clearfix'>
@@ -105,7 +105,7 @@
 		
 		<p>Red Truck &copy; 2012. Red Truck Inc. is located in Los Angeles, Ca.</p>
 		
-			<!----------------------------- JH added jTest -------------------------------------------------->		
+			<!----------------------------- Login area -------------------------------------------------->		
 				<p class='logIn'>
 				<?php print theme('links__system_secondary_menu', array(
 				'links' => $secondary_menu,
@@ -131,7 +131,7 @@
   </div> <!-- /#footer --> 
 	  <!-- JavaScript includes - jQuery, turn.js and our own script.js -->
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script src="http://www.setdesign-la.com/jh-scripts/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
+		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
 		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js"></script>
  
  

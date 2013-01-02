@@ -1,17 +1,21 @@
 
 
 
+ $(function() {
 
-$(function(){
-
-    $('.thumbs a').touchTouch() ;
+	
+	//$('.content1-one')    .on("mouseenter",      function() {
+	//$('.thumbs a').touchTouch();
 	
 	
-		
-});
-$(function() {
-	$('.content1-one') .mouseenter( function() {
-	$('.thumbs a').touchTouch();
-	});
+     //});
+ $('.thumbs a').touchTouch();
 
+	
+	
+	
+	
 });
+	
+	
+

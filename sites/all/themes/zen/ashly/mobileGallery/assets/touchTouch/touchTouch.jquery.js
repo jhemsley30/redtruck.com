@@ -87,7 +87,7 @@
 			var galleryName = $(this).attr('data-gallery');  // JH added these four lines to be able to do multiple galleries
 			if (galleryName) {                               //
 			items = $('[data-gallery='+galleryName+']');     //
-			}                                                //
+			}                                               //
 			
 			index = items.index(this);
 			showOverlay(index);
@@ -202,6 +202,7 @@
 		
 		function loadImage(src, callback){
 			var img = $('<img>').on('load', function(){
+
 				callback.call(img);
 			});
 			
