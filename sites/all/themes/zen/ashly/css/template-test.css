@@ -1009,7 +1009,19 @@ border: 2px solid #806F52;
 margin: 0 0 15px;
 }
 
-.page-node-15 .content1 h1  {
+.page-node-15 .content1 h1  { /** this is for contact title style **/
+  position:relative;
+  margin: 0px auto 65px auto;
+  padding:5px 1% 5px ;
+  //width:58%;
+  color: #000; /** was #806F52; **/
+  font-size: 25px;
+  border-bottom: 1px solid #806F52;
+  -webkit-box-shadow: 0 4px 5px -5px #645740;
+  -moz-box-shadow:    0 4px 5px -5px #645740;
+   box-shadow:        0 4px 5px -5px #645740;
+}
+.companyInfo  {      /** this is for company info title,  directly below contactform **/
   position:relative;
   margin: 0px auto 65px auto;
   padding:5px 1% 5px ;
