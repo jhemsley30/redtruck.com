@@ -1011,7 +1011,7 @@ margin: 0 0 15px;
 
 .page-node-15 .content1 h1  { /** this is for contact title style **/
   position:relative;
-  margin: 0px auto 65px auto;
+  margin: 0px auto 45px auto;
   padding:5px 1% 5px ;
   //width:58%;
   color: #000; /** was #806F52; **/
@@ -1023,7 +1023,7 @@ margin: 0 0 15px;
 }
 .companyInfo  {      /** this is for company info title,  directly below contactform **/
   position:relative;
-  margin: 0px auto 65px auto;
+  margin: 0px auto 45px auto;
   padding:5px 1% 5px ;
   //width:58%;
   color: #000; /** was #806F52; **/
