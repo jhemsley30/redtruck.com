@@ -1025,6 +1025,35 @@ margin: 0 0 15px;
 	padding: 10px;	
 	}	
 	
+	/** #######################################################################################################################
+		Branding for SEVEN theme in back end interface. ** Change everytime there is a DRUPAL version update
+		####################################################################################################################### **/
+		
+		/** these three styles need to be changed on every DRupal version change, in themes/seven/style.css **/
+ 
+ #branding {
+  overflow: hidden;
+  padding: 20px 20px 0 20px; /* LTR */
+  position: relative;
+  //background-color: #e0e0d8;
+  background: #D6C2A0 url(http://setdesign-la.com/redtruck-images/redtruck-logo.png) 10px center no-repeat ;
+}
+#branding div.breadcrumb {
+  font-size: 0.846em;
+  padding-bottom: 5px;
+  padding-left: 130px;
+}		
+  #branding h1.page-title {
+  color: #000;
+  margin: 0;
+  padding-bottom: 10px;
+  padding-left: 130px;
+  font-size: 1.385em;
+  font-weight: normal;
+  float: left; /* LTR */
+}
+
+	
 	/** #########################################################################################################################
 	FADESLIDESHOW.css STYLES
 	######################################################################################################################### **/
