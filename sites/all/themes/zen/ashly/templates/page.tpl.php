@@ -75,7 +75,7 @@
 		</div>
 		<div class='ourServices'>Contact</div>
 		<div class='contact'>
-			<b>Location:</b> Red Truck Inc. 1300 N. Grand St. Los Angeles, Cakifornia 90046<br/> <br/>
+			<b>Location:</b> Red Truck Inc. 1300 N. Grand St. Los Angeles, California 90046<br/> <br/>
 			<b>Phone:</b> 888.256.2111<br/><br/>
 			<b>Email:</b> <a href='contact'>Contact Form</a> or <a href="mailto:someone@example.com?Subject=Hello">Send Here</a>
 		
@@ -111,7 +111,7 @@
      </div><!-- END footerInside -->
 
   </div> <!-- /#footer --> 
-	  <!-- JavaScript includes - jQuery, turn.js and our own script.js -->
+	  <!-- JavaScript includes - jQuery, touchTouch.js and our own script.js -->
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
 		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js"></script>
