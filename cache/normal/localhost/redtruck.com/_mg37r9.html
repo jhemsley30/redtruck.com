@@ -42,7 +42,7 @@
 <script src="?mg37r9"></script>
 <script src="http://localhost:2375/redtruck.com/sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js?mg37r9"></script>
 <script src="http://localhost:2375/redtruck.com/sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js?mg37r9"></script>
-<script>jQuery.extend(Drupal.settings, {"basePath":"\/redtruck.com\/","pathPrefix":"","ajaxPageState":{"theme":"ashly","theme_token":"h5vvmp1uM2iR4zNRUBqEPgIBXXCbmmcr00qfuHMtW_M","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"http:\/\/html5shim.googlecode.com\/svn\/trunk\/html5.js":1,"http:\/\/css3-mediaqueries-js.googlecode.com\/svn\/trunk\/css3-mediaqueries.js":1,"sites\/all\/themes\/zen\/ashly\/https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"sites\/all\/themes\/zen\/ashly\/mobileGallery\/assets\/touchTouch\/touchTouch.jquery.js":1,"sites\/all\/themes\/zen\/ashly\/mobileGallery\/assets\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/zen\/system.menus.css":1,"sites\/all\/themes\/zen\/ashly\/css\/template-test.css":1,"sites\/all\/themes\/zen\/ashly\/css\/iefix.css":1}}});</script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/redtruck.com\/","pathPrefix":"","ajaxPageState":{"theme":"ashly","theme_token":"wM3tAJBhHrHi9K2CRe2yHW6aOuFyUC2D-nl5zYmzxvQ","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"http:\/\/html5shim.googlecode.com\/svn\/trunk\/html5.js":1,"http:\/\/css3-mediaqueries-js.googlecode.com\/svn\/trunk\/css3-mediaqueries.js":1,"sites\/all\/themes\/zen\/ashly\/https:\/\/ajax.googleapis.com\/ajax\/libs\/jquery\/1.7.2\/jquery.min.js":1,"sites\/all\/themes\/zen\/ashly\/mobileGallery\/assets\/touchTouch\/touchTouch.jquery.js":1,"sites\/all\/themes\/zen\/ashly\/mobileGallery\/assets\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/contrib\/simplenews\/simplenews.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib\/views\/css\/views.css":1,"sites\/all\/modules\/contrib\/ctools\/css\/ctools.css":1,"sites\/all\/themes\/zen\/system.menus.css":1,"sites\/all\/themes\/zen\/ashly\/css\/template-test.css":1,"sites\/all\/themes\/zen\/ashly\/css\/iefix.css":1}}});</script>
   
   <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Handlee' rel='stylesheet' type='text/css'><!-- google fonts -->
   <!-- <meta name = "viewport" content = "initial-scale = 1.0">  --><!-- this was used on touchtouch demo -->
@@ -249,22 +249,17 @@ $(function() {
 				<a class="fancybox"  rel="group" href="#inline">
 	login
 </a>
-	<div id='inline' style='display:none;'>
+	  <div id='inline' style='display:none;'>
 	<h1 class='loginTitle'>Red Truck Inc.</h1>
 	
 	 <form action="user/login" method="post" id="user-login" accept-charset="UTF-8"><div><div  class="form-item form-type-textfield form-item-name" > 
-  <label for="edit-name">Username <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" id="edit-name" name="name" value="User Name" size="50" maxlength="128" class="form-text topText required rounded" onFocus="this.value=' '" />
+  <label for="edit-name">&nbsp;<span class="form-required" title="This field is required."></span></label>
+ <input type="text" id="edit-name" name="name" value="" size="50" maxlength="128" class="form-text required rounded" />
 <div class="description"><!-- Enter your Theme Exchange username. -->&nbsp;</div>
 </div> <!-- End ashContent -->
 <div class="form-item form-type-password form-item-pass">
-
-
-  <label for="edit-pass">Password <span class="form-required" title="This field is required.">*</span></label>
- <input type="text" id="edit-pass" name="pass" size="50" maxlength="128" class="form-text required rounded"  value="Password"
-    onblur="this.value=!this.value?'Password':this.value;"
-    onfocus="this.select()"
-    onclick=" if (this.value=='Password'){this.value=''; this.type='password'}"/>
+  <label for="edit-pass">&nbsp;<span class="form-required" title="This field is required."></span></label>
+ <input type="password" id="edit-pass" name="pass" size="50" maxlength="128" class="form-text required rounded" />
 <div class="description"><!-- Enter the password that accompanies your username. -->&nbsp;</div>
 </div>
 <input type="hidden" name="form_build_id" value="form-I80-7cjV7RBQ7eO1bxGywGBbMGLuh0TbaK2PBKHpHC4" />
@@ -272,7 +267,8 @@ $(function() {
 <div class="form-actions form-wrapper" id="edit-actions">
 <input type="submit" id="edit-submit" name="op" value="Log in" class="form-submit" /></div></div></form>
 	
-	</div><!-- end inline -->
+	</div><!-- -------------------------------------end inline -------------------------------------------------------------- -->
+
 				</p>
      </div><!-- END footerInside -->
 
@@ -287,4 +283,4 @@ $(function() {
 
    </body>
 </html>
-<!-- Page cached by Boost @ 2013-01-04 08:46:46, expires @ 2013-01-04 09:46:46, lifetime 1 hour -->
+<!-- Page cached by Boost @ 2013-01-04 09:49:51, expires @ 2013-01-04 10:49:51, lifetime 1 hour -->
