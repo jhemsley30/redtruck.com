@@ -8,11 +8,30 @@
   <?php print $styles; ?>
   <?php print $scripts; ?>
   
-  <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Handlee' rel='stylesheet' type='text/css'><!-- google fonts -->
+  <link href='http://fonts.googleapis.com/css?family=Bowlby+One|Handlee|Merienda ' rel='stylesheet' type='text/css'><!-- google fonts -->
   <!-- <meta name = "viewport" content = "initial-scale = 1.0">  --><!-- this was used on touchtouch demo -->
     <meta name="viewport" content="width=device-width; initial-scale=1.0">  
 
       <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
+	  
+<!-- ----------------------------------------- Below is for the webform to clear text on focus ------------------------------------ -->	  
+	  <script type="text/javascript">
+	$(document).ready(function () {
+swap_val = [];
+ $(".webform-client-form .form-text, .webform-client-form .form-textarea").each(function(i){
+swap_val[i] = $(this).val();
+$(this).focus(function(){
+if ($(this).val() == swap_val[i]) {
+ $(this).val("");
+ }
+ }).blur(function(){
+if ($.trim($(this).val()) == "") {
+ jQuery(this).val(swap_val[i]);
+ }
+ });
+});
+});
+</script>
 
 
      <!-- ------------------------------ fade slideshow js include ---------------------------------------------- -->

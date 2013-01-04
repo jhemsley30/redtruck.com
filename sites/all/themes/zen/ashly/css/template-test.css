@@ -128,6 +128,9 @@ h1 {
 font-size: 22px;
 color:#000;
 }
+#page-title  {
+margin: 0 0 15px;
+}
 
 
 /* reset webkit search input styles */
@@ -299,7 +302,7 @@ content1
    margin:  150px  0 30px;  
    padding: 0 0 15px;
    width: 100%;         /* JH was 600px; , 16px added for border */
-  // background: url(http://www.setdesign-la.com/redtruck-images/side-border.png) 0 bottom repeat-x;
+
 }
 .content1-one {
 position: relative;
@@ -506,7 +509,7 @@ SIDEBAR
 *************************************************************************************/
 
 .widget {
-	background:#c1b091 ;    /* #a5916f;  */
+	background:#c1b091 ;    /* #a5916f;  */   /** JH kept this for style examples only **/
 	border: 8px solid #cbbca1 ; /* #B29F7F; */
 	margin: 15px 0 15px ;
 	padding: 10px 20px;
@@ -717,10 +720,7 @@ background:transparent;
 .node-author .username { /** this is used to get rid of author name in recent block, in right column **/
 display:none;
 }
-.profile .user-picture { /** this is for the image on the user page, don't really need it **/
-margin: -75px 1em 1em 0;
-display:none;
-}
+
 #content article.post img { /** for images added to article posts **/
     float: right;
     margin: 0 0 15px 25px;
@@ -763,6 +763,10 @@ margin: 0 0 10px;
  padding: 25px 0 30px;
  }
  
+ .page-user ul.tabs {   /** this hides the tabs list on user logged in page **/
+ display:none;
+ }
+ 
  
  /** #################################################################################################################
      VIEW STYLES
@@ -787,11 +791,19 @@ margin: 0 0 10px;
    box-shadow:        0 4px 5px -5px #645740;
 	 }
 	 
-/** These styles below are all for the rt-category block in views ************************************************************** **/
+/** ****************************************************************************
+ These styles below are all for the rt-category block in views 
+ ******************************************************************************* **/
 
 #block-views-rt-category-block h2  {       /** this is for the category block heading style for h2 **/
-padding: 5px 3px;
-margin: 0 0 10px;
+margin: 60px 0 10px 7px;
+font-size: 18px;
+background:  url("http://www.setdesign-la.com/redtruck-images/gallery3.png") no-repeat scroll 2px center  #d6c2a0;
+padding:    2px 0 2px 30px;
+color: #000;
+font-weight: normal;
+font-family: 'Merienda', cursive;
+width: 96%;
 }
  
  .view-rt-category .views-field-title  {  /** this is for category block, resets all the field items used in other views **/
@@ -811,241 +823,193 @@ margin: 0 0 10px;
  }
  .view-rt-category .views-row {    /** this is for the rows of the category list block (aka "rt-category" in views). **/
 // background: #dbd9d8;
- border-bottom: 1px solid #dbd9d8;
- border-right: 1px solid grey;
+// border-bottom: 1px solid #dbd9d8;
+// border-right: 1px solid grey;
  padding: 3px ;
  margin: 0 0 10px;
  }
- .page-rt-category .content1-one h1 {  /** this is for h1 styling on rt-category view **/
- background: url("http://www.setdesign-la.com/redtruck-images/gallery3.png") no-repeat scroll 0 center transparent;
- padding:    0 0 0 30px;
- margin: 0 0 10px;
+ .page-rt-category .content1-one  h1 {  /** this is for h1 styling on rt-category view **/
+ background:  url("http://www.setdesign-la.com/redtruck-images/gallery4.png") no-repeat scroll 2px center  #d6c2a0;
+ padding:    5px 0 5px 52px;
+ margin: 0 0 10px 7px;
+ font-family: 'Merienda', cursive;
+ color: #000;
+ font-weight: normal;
+ font-size: 24px;
+ width:94%;
  }
- 
- 
+  .content1 .catHolder {
+ position:relative;
+ float:left;
+ margin: 5px;
+ padding: 3px 0 2px;
+ height: 50px;
+ width: 100%;
+  border-bottom: 1px solid #dbd9d8;
+ border-right: 1px solid grey;
+  }
+  .content1 .catImage {
+ position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+ height:50px;
+ line-height:50px;
+ }
+  .catImage img {  /** this is for the image to left of title **/
+ width: 48px;
+ height: 48px;
+ border: 2px solid grey;
+ }
+  .content1 .catTitle {
+  position:relative;
+ float:left;
+ margin:0;
+ padding:7px 0 0 5px;
+  height:50px;
+  }
+  .content1 .catTitle span {   /** this is for the category name, right below title **/
+   font-style: italic;
+   font-size: 12px;
+   }
+   .content1 .catCategory {
+  position:relative;
+ float:left;
+ margin:0;
+ padding:0;
+  height:50px;
+ line-height:50px;
+  }
+  
+  
+ /** #######################################################################################################
+		CLIENTS LIST PAGE STYLES
+	######################################################################################################## **/
+  
+  .clientList {
+  position:relative;
+  float:left;
+  margin: 1%;
+  padding: 1%;
+  width: 16%;
+  height:50px;
+  line-height: 50px;
+  text-align:center;
+  color: #000;
+  background: #d6c2a0; 
+  
+-webkit-box-shadow: 0 0 50px 10px #733D1A inset;
+-moz-box-shadow:    0 0 50px 10px #733D1A inset;
+ box-shadow:         0 0 50px 10px #733D1A inset;
+  }
+  .page-client-list .content1 h1 {   /** this is for the client list page only, h1 indent **/
+  margin: 0 0 0 1%;
+  padding: 18px 0 0 45px;
+  font-family: 'Merienda', cursive;
+  background: url("http://www.setdesign-la.com/redtruck-images/r.png") no-repeat scroll left center  ; 
+  }
+  .page-client-list .content2-two { /** this removes lower clients list from template on clients page itself **/
+  display:none;
+  }
+  .page-client-list  .content2-clients .ourServices {     /**  this removes lower clients Title from template on clients page itself  **/
+  display:none;                                         /**  added div class content2-clients so i can hide clients on client page **/
+  }
+  
+  
 
-/** ###################################################################################################################
-    Fade Slideshow stuff
-	################################################################################################################### **/
+/** ###############################################################################################
+    FORM STYLES
+	############################################################################################### **/
 	
+.form-textarea-wrapper textarea { /** this is to change width of text area in  Contact webform **/
+    -moz-box-sizing: border-box;
+    display: block;
+    margin: 0;
+   // width: 53%;
+	height:150px;
+	padding: 10px 10px;
+    border-radius: 3px 3px; 
+   -moz-border-radius: 3px; 
+   -webkit-border-radius: 3px;
+    background-color: transparent;
+    -moz-box-shadow:    inset 0 0 10px #A99878;
+	-webkit-box-shadow: inset 0 0 10px #A99878;
+	box-shadow:         inset 0 0 10px #A99878;
+   color:grey;
+   background: none;
+   border: 1px solid #806F52;
+  // behavior:url(http://setdesign-la.com/bagelmania-devel/sites/all/themes/zen/ashly/css/PIE.htc);
+}
+.form-textarea-wrapper textarea:hover {
+border: 1px solid grey;
+}
+.form-textarea-wrapper textarea:focus {
+outline:none;
+border: 1px solid #fff !important;
+}
+.resizable-textarea .grippie {   /****** this is for the re-sizing widget in the text area in  Contact webform **************/
+    -moz-border-bottom-colors: none;
+    -moz-border-image: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none;
+	position:relative;
+    border-color:none;
+    border-style:none;
+    border-width: none;
+    cursor: s-resize;
+    height: 9px;
+    overflow: hidden;
+//	width:80%;
+}
 
-	
- 
- 
-	
+input.form-text{
+text-align:left;
+background: transparent;
+//width: 50%;
+padding:0 10px;
+margin:0;
+//float:left;
+line-height: 35px;
+height:35px;
+color:grey;
+border: 1px solid #806F52;
+   -moz-box-shadow:    inset 0 0 10px #A99878;
+	-webkit-box-shadow: inset 0 0 10px #A99878;
+    box-shadow:         inset 0 0 10px #A99878;
+    border-radius: 3px 3px; 
+   -moz-border-radius: 3px; 
+   -webkit-border-radius: 3px;
+    //behavior:url(http://setdesign-la.com/bagelmania-devel/sites/all/themes/zen/ashly/css/PIE.htc);
+   
+}
+input.form-text:hover {
+border: 1px solid grey;
+}
+input.form-text:focus {
+outline:none;
+border: 1px solid #fff !important;
+}
+
+ .form-submit {
+background: #806F52;
+border:2px solid #CBBCA1;
+cursor:pointer;
+border-radius: 3px 3px 3px 3px;
+//box-shadow: 0 0 10px #000000 inset;
+padding: 3px 5px;
+}
+ .form-submit:hover {
+background: #CBBCA1;
+border: 2px solid #806F52;
+}
+
+.page-node-15 .content1 h1 {  /** this is for the title style on the thank you page of sending a form submission **/
+margin: 0 0 15px;
+}
 
 
-
-
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
 /** #########################################################################################################################
 	FADESLIDESHOW.css STYLES
 	######################################################################################################################### **/
@@ -1098,6 +1062,452 @@ margin: 0 0 10px;
     z-index:9;
 	//opacity: 1;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /** ###############################################################################################
 	TRANSITIONS WITH FADE SLIDESHOW TEST

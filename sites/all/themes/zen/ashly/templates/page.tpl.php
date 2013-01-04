@@ -60,8 +60,9 @@
 				<p>Removal of all construction</p>
 			</div>			
 		</div><!-- END content2-one -->
-		 <div class='ourServices'>Clients</div>
+		<div class='content2-clients'><div class='ourServices'>Clients</div> </div>
 		<div class='content2-two'>
+		
 			<div class='clients grey'>Jacobs</div>
 			<div class='clients grey'>Atlas</div>
 			<div class='clients grey'>Mike Peter's</div>
@@ -90,9 +91,9 @@
 	<div id="footer">
 	    <div class='footerInside clearfix' >
 			<div class='bottomMenu'>
-				<div class='footerHome     bottomMenuInside'><a href='home'>Home         </a></div>
-				<div class='footerAbout    bottomMenuInside'><a href='about'>About       </a></div>
-				<div class='footerWork     bottomMenuInside'><a href='work'>Work         </a></div>
+				<div class='footerHome     bottomMenuInside'><a href='template-test'>Home         </a></div>
+				<div class='footerAbout    bottomMenuInside'><a href='about-us'>About       </a></div>
+				<div class='footerWork     bottomMenuInside'><a href='rt-category'>Work         </a></div>
 				<div class='footerContact  bottomMenuInside'><a href='contact'>Contact   </a></div>
 			</div><!-- END bottomMenu -->
 			<div class='bottomMenuRight'>
@@ -106,26 +107,7 @@
 		<p>Red Truck &copy; 2012. Red Truck Inc. is located in Los Angeles, Ca.</p>
 		
 			<!----------------------------- Login area -------------------------------------------------->		
-				<p class='logIn'>
-				<?php print theme('links__system_secondary_menu', array(
-				'links' => $secondary_menu,
-				'attributes' => array(
-				'id' => 'secondary-menu',
-				'class' => array('links', 'inline', 'clearfix'),
-				),
-				'heading' => array(
-				'text' => $secondary_menu_heading,
-				'level' => 'h2',
-				'class' => array('element-invisible'),
-				),
-				)); ?> 
-				<!-- this checks to see if user is logged in. If not, Log in link will display. -->
-				<?php $role = 'anonymous user';
-				if (in_array($role, $variables['user']->roles)) {
-				print "<a href='login'>Log In</a>";
-				}
-				?>
-				</p>
+				
      </div><!-- END footerInside -->
 
   </div> <!-- /#footer --> 

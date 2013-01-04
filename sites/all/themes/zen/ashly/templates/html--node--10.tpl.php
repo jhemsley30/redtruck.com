@@ -12,7 +12,25 @@
   <!-- <meta name = "viewport" content = "initial-scale = 1.0">  --><!-- this was used on touchtouch demo -->
     <meta name="viewport" content="width=device-width; initial-scale=1.0">  
 
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+<!------------------------------------ ------------- fancybox ---------------------------------------------------->
+    
+   <!-- Add mousewheel plugin (this is optional) -->
+<script type="text/javascript" src="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/lib/jquery.mousewheel-3.0.6.pack.js"></script>
+
+<!-- Add fancyBox -->
+<link rel="stylesheet" href="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/source/jquery.fancybox.css?v=2.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/source/jquery.fancybox.pack.js?v=2.0.5"></script>
+
+<!-- Optionally add button and/or thumbnail helpers -->
+<link rel="stylesheet" href="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/source/helpers/jquery.fancybox-buttons.css?v=2.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/source/helpers/jquery.fancybox-buttons.js?v=2.0.5"></script>
+
+<link rel="stylesheet" href="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/source/helpers/jquery.fancybox-thumbs.css?v=2.0.5" type="text/css" media="screen" />
+<script type="text/javascript" src="http://www.setdesign-la.com/jh-scripts/ashlyFancybox/source/helpers/jquery.fancybox-thumbs.js?v=2.0.5"></script> 
+ <!---------------------------------------------- END FANCYBOX    ----------------------------------------------------------------> 
+	  
 
 
      <!-- ------------------------------ fade slideshow js include ---------------------------------------------- -->
