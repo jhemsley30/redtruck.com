@@ -889,21 +889,44 @@ width: 96%;
   .clientList {
   position:relative;
   float:left;
-  margin: 1%;
+  margin: 1% 5% 50px ;       /** 1% **/
+  //padding: 1%;      /** 1% **/
+  width: 20%;       /** 16% **/
+  height:75px;
+  line-height: 75px;
+  text-align:center;
+  color: #000;
+  z-index: 25;
+  border: 10px solid #111111;
+    border-radius: 4px 4px; 
+   -moz-border-radius: 4px; 
+   -webkit-border-radius: 4px;
+   -webkit-box-shadow: 0 0 50px 10px #733D1A inset;
+   -moz-box-shadow:    0 0 50px 10px #733D1A inset;
+    box-shadow:         0 0 50px 10px #733D1A inset;
+  }
+  .clientListName {
+  width: 100%
+  z-index: 26;
   padding: 1%;
-  width: 16%;
+  }
+  
+  .clientList-stem {
+   position:relative;
+  float:left;
+  margin: 0;       /** 1% **/
+  padding: 0;      /** 1% **/
+  width: 100%;       /** 16% **/
   height:50px;
   line-height: 50px;
   text-align:center;
   color: #000;
-  background: #d6c2a0; 
-  
--webkit-box-shadow: 0 0 50px 10px #733D1A inset;
--moz-box-shadow:    0 0 50px 10px #733D1A inset;
- box-shadow:         0 0 50px 10px #733D1A inset;
+  z-index: -10;
+  background:  url("http://www.setdesign-la.com/redtruck-images/stem.png") no-repeat scroll center 5px ; 
   }
+  
   .page-client-list .content1 h1 {   /** this is for the client list page only, h1 indent **/
-  margin: 0 0 0 1%;
+  margin: 0 0 20px 4%;
   padding: 18px 0 0 45px;
   font-family: 'Merienda', cursive;
   background: url("http://www.setdesign-la.com/redtruck-images/r.png") no-repeat scroll left center  ; 
