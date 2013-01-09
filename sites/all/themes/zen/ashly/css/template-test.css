@@ -857,9 +857,10 @@ width: 96%;
  line-height:50px;
  }
   .catImage img {  /** this is for the image to left of title **/
- width: 48px;
- height: 48px;
+ width: 42px;
+ height: 42px;
  border: 2px solid grey;
+ padding: 3px;
  }
   .content1 .catTitle {
   position:relative;
@@ -870,7 +871,7 @@ width: 96%;
   }
   .content1 .catTitle span {   /** this is for the category name, right below title **/
    font-style: italic;
-   font-size: 12px;
+   font-size: 11px;
    }
    .content1 .catCategory {
   position:relative;
@@ -881,6 +882,17 @@ width: 96%;
  line-height:50px;
   }
   
+   .more-link a {
+  float:left;
+  margin: 8px 0 0 8px;
+  }
+  /** #####################################################################################################
+		ABOUT US page styles
+	  ##################################################################################################### **/
+	  
+ .page-node-17 h1 {
+	margin: 0 0 15px;
+}	
   
  /** #######################################################################################################
 		CLIENTS LIST PAGE STYLES
@@ -1014,7 +1026,7 @@ width: 96%;
   }
   
   .page-client-list .content1 h1 {   /** this is for the client list page only, h1 indent **/
-  margin: 0 0 35px 0px;
+  margin: 0 0 70px 0px;
   padding: 20px 0 5px 45px;
   font-family: arial;
    border-bottom: 1px solid #806F52;
