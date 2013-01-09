@@ -1200,13 +1200,18 @@ If you would like to have the characters \'[\' and \']\' please use the html ent
   /**
    * Render this field as altered text, from a fieldset set by the user.
    */
-  function render_altered($alter, $tokens) {
-    // Filter this right away as our substitutions are already sanitized.
-    $value = filter_xss_admin($alter['text']);
-    $value = strtr($value, $tokens);
+   
+  /** ##########################################################################################################################
+      JH- THIS WAS ADDED TO ALLOW 'style="" into rewrite section of views, make sure to replace in updated modules of views
+	  ########################################################################################################################## **/
+  function render_altered($alter, $tokens) {     
+    $value = strtr($alter['text'], $tokens);
 
     return $value;
   }
+  /** ###########################################################################################################################
+      JH- END OF WHAT I ADDED
+	  ########################################################################################################################### **/
 
   /**
    * Trim the field down to the specified length.
