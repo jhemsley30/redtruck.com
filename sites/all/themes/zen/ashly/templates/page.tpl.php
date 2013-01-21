@@ -80,6 +80,7 @@
 			<b>Email:</b> <a href='contact'>Contact Form</a> or <a href="mailto:someone@example.com?Subject=Hello">Send Here</a>
 		
 		</div>
+	
    </div><!-- END content2 -->
    
 </div> <!-- pagewrapRT --> 
@@ -111,9 +112,25 @@
      </div><!-- END footerInside -->
 
   </div> <!-- /#footer --> 
-	  <!-- JavaScript includes - jQuery, touchTouch.js and our own script.js -->
-		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
-		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
-		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js"></script>
- 
- 
+  
+   <!-- FlexSlider -->
+  
+  
+  <script type="text/javascript">
+    $(function(){
+      SyntaxHighlighter.all();
+    });
+    $(window).load(function(){
+      $('.flexslider').flexslider({
+        animation: "slide",
+        animationLoop: false,
+        itemWidth: 300,
+        itemMargin: 5,
+        start: function(slider){
+          $('body').removeClass('loading');
+        }
+      });
+    });
+  </script>
+  
+	 

@@ -12,7 +12,23 @@
   <!-- <meta name = "viewport" content = "initial-scale = 1.0">  --><!-- this was used on touchtouch demo -->
     <meta name="viewport" content="width=device-width; initial-scale=1.0">  
 
-      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>	
+      <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+
+     <!-- touchTouch -->
+
+	   <script src="sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.jquery.js"></script>
+		<script src="sites/all/themes/zen/ashly/mobileGallery/assets/js/script.js"></script>
+		<link href='sites/all/themes/zen/ashly/mobileGallery/assets/touchTouch/touchTouch.css' rel='stylesheet' type='text/css'>	
+	
+	<!-- touchTouch 2 for slider styles -->	
+		<script src="sites/all/themes/zen/ashly/mobileGallery2/assets/touchTouch/touchTouch.jquery.js"></script>
+		<script src="sites/all/themes/zen/ashly/mobileGallery2/assets/js/script.js"></script>
+		<link href='sites/all/themes/zen/ashly/mobileGallery2/assets/touchTouch/touchTouch.css' rel='stylesheet' type='text/css'>	
+	  
+	
+	  <!-- FlexSlider CSS -->
+    <script defer src="sites/all/themes/zen/ashly/FlexSlider/jquery.flexslider.js"></script>
+	<link rel="stylesheet" href="sites/all/themes/zen/ashly/FlexSlider/flexslider.css" type="text/css" media="screen" />	  
 	  
 <!-- ----------------------------------------- Below is for the webform to clear text on focus ------------------------------------ -->	  
 	  <script type="text/javascript">
