@@ -2535,9 +2535,9 @@ position: relative;
 border-bottom: 1px dotted #333333;
     height: 30px;
     margin: -15px auto 0;
-    padding: 0 0 0 320px;
+    padding: 0;
     position: relative;
-    //width: 800px;
+    width: 600px;
 }
 .newFootMenu {
 position: relative;
@@ -2554,6 +2554,7 @@ font-weight: 400;
 }
 .newHome {
 background: url("http://www.setdesign-la.com/redtruck-images/home2.png") no-repeat scroll 0 center transparent;
+margin: 0 0 0 50px;
 }
 .newAbout {
 background: url("http://www.setdesign-la.com/redtruck-images/services2.png") no-repeat scroll 0 center transparent;
@@ -2590,14 +2591,14 @@ font-size: 11px;
 
 @media screen and (max-width: 1024px) {
 .newBottomMenuContainer {
-    padding: 0 0 0 150px;
+    padding: 0;
 
    }
 
 }
 @media screen and (max-width: 650px) {
 .newBottomMenuContainer {
-    padding: 0 0 0 15px;
+    padding: 0;
     border: none;
    }
 
