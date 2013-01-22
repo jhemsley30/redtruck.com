@@ -2223,14 +2223,25 @@ background: #ffffff url(http://setdesign-la.com/redtruck-images/menuBorder.png) 
 .newLogo {
 position:relative;
 margin: 0 auto;
-padding: 38px 0 0 8%;
-width: 77%;
+padding: 0;
+width: 85%;
 font-size: 40px;
 font-family: Raleway, sans-serif;
 font-weight: 500;
 letter-spacing: -2px;
-background:  url(http://setdesign-la.com/redtruck-images/rt2.png) 0 0 no-repeat; 
+overflow:hidden;
 }	
+.newLogoContent {
+position:relative;
+margin: 0;
+padding: 38px 0 0 100px;
+width: 60%;
+font-size: 40px;
+font-family: Raleway, sans-serif;
+font-weight: 500;
+letter-spacing: -2px;
+background:  url(http://setdesign-la.com/redtruck-images/rt2.png) -10px 0 no-repeat; 
+}
 
 
 /** #####################################################################

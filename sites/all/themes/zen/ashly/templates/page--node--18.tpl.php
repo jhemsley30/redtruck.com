@@ -1,6 +1,8 @@
 <div  class=' newHeaderContainer '>
      <div class='newLogo clearfix'>
-		Red Truck
+		<div class='newLogoContent'>
+			Red Truck
+		</div><!-- END newLogoContent -->
 	</div> <!-- END newLogo -->
 </div> <!-- newHeaderContainer -->	
 <div class='theWrap'>
