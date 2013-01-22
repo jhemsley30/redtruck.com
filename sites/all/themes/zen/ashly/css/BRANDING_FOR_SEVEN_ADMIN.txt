@@ -1,0 +1,48 @@
+
+
+
+
+######################################################################
+BELOW WILL REPLACE SEVEN STYLE .......theme/seven/styles.css line: 184
+
+
+
+
+
+#branding {
+  overflow: hidden;
+  padding: 20px 20px 0 20px; /* LTR */
+  position: relative;
+  //background-color: #e0e0d8;
+  background: #D6C2A0 url(http://setdesign-la.com/redtruck-images/redtruck-logo.png) 10px center no-repeat ;
+}
+
+#branding div.breadcrumb {
+  font-size: 0.846em;
+  padding-bottom: 5px;
+  padding-left: 130px;
+}
+#branding div.block {
+  position: relative;
+  float: right; /* LTR */
+  width: 240px;
+  padding-left: 10px; /* LTR */
+  background: #333;
+}
+#branding div.block form label {
+  display: none;
+}
+#branding div.block form div.form-item {
+  float: left; /* LTR */
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+#branding div.block form input.form-text {
+  width: 140px;
+  margin-right: 10px; /* LTR */
+}
+#branding div.block form input.form-submit {
+  text-align: center;
+  width: 80px;
+}
