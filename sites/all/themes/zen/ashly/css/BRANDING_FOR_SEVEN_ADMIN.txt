@@ -5,7 +5,7 @@
 ######################################################################
 BELOW WILL REPLACE SEVEN STYLE .......theme/seven/styles.css line: 184
 
-
+ALSO, add the h1 styles that are divded below with ####### at line 242 in style.css
 
 
 
@@ -45,4 +45,19 @@ BELOW WILL REPLACE SEVEN STYLE .......theme/seven/styles.css line: 184
 #branding div.block form input.form-submit {
   text-align: center;
   width: 80px;
+}
+
+
+############################################################################
+
+ADD THIS AT line: 242
+
+#branding h1.page-title {
+  color: #000;
+  margin: 0;
+  padding-bottom: 10px;
+  font-size: 1.385em;
+  font-weight: normal;
+  float: left; /* LTR */
+  padding: 0 0 10px 150px;
 }
