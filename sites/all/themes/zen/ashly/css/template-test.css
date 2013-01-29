@@ -1661,10 +1661,10 @@ margin: 0 auto 105px ;
 		left: -100%;
 	}
 	20% {
-	left: 55%;
+	left: 280px; //55%;
 	}
 	95% {
-	left: 55%;
+	left: 280px; //55%;
 	}
 	
 	100% {
@@ -1689,7 +1689,7 @@ margin: 0 auto 105px ;
 	}
 }
 @-moz-keyframes moveContent {
-   0% {
+  	0% {
 		left: 100%;
 	}
 	15% {
@@ -1704,14 +1704,14 @@ margin: 0 auto 105px ;
 }
 @keyframes moveContent {
 	
-    0% {
+ 	0% {
 		left: 100%;
 	}
 	15% {
-	left: 55%;
+	left: 280px; //55%;
 	}
 	95% {
-	left: 55%;
+	left: 280px;    //55%;
 	}
 	100% {
 		left: -100%;
@@ -2372,7 +2372,7 @@ opacity: .5;
 .panelCat {                   /** div inside panel for fancybox **/
 position:relative;
 float:left;
-margin: 0 5px;
+margin: 5px 5px 0;
 width: 24%;
 }
 .panelCat:hover {
