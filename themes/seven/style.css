@@ -185,14 +185,11 @@ pre {
   overflow: hidden;
   padding: 20px 20px 0 20px; /* LTR */
   position: relative;
-  //background-color: #e0e0d8;
-  background: #D6C2A0 url(http://setdesign-la.com/redtruck-images/redtruck-logo.png) 10px center no-repeat ;
+  background-color: #e0e0d8;
 }
-
 #branding div.breadcrumb {
   font-size: 0.846em;
   padding-bottom: 5px;
-  padding-left: 130px;
 }
 #branding div.block {
   position: relative;
@@ -218,6 +215,7 @@ pre {
   text-align: center;
   width: 80px;
 }
+
 /**
  * Help.
  */
@@ -246,7 +244,6 @@ pre {
   font-size: 1.385em;
   font-weight: normal;
   float: left; /* LTR */
-  padding: 0 0 10px 150px;
 }
 
 /**
