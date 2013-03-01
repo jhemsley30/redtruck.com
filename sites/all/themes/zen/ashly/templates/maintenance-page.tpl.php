@@ -30,6 +30,7 @@
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
 
 <div id="page">
+<br/><br/>
 
   <header id="header" role="banner">
 
