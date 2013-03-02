@@ -2193,6 +2193,13 @@ float:left;
 margin:0;
 padding:0;
 }
+.theMaintenenceWrap { /** this is for the maintence mode page **/
+position:relative;
+float:left;
+margin:0;
+padding:0;
+width: 100%;
+}
 
 .newHeaderContainer {
 position: relative;
@@ -2413,6 +2420,14 @@ position: relative;
 margin:25px auto 0;
 padding:0;
 width: 85%;
+}
+.newMaintenenceContainer {  /** this is for the maintenence page **/
+position: relative;
+margin:25px auto 0;
+padding:0;
+width: 85%;
+background: url("http://setdesign-la.com/redtruck-images/menuBorder.png") repeat-x scroll left bottom #FFFFFF;
+
 }
 .newOne {
 position:relative;

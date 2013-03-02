@@ -1,15 +1,4 @@
-<?php
-/**
- * @file
- * Zen theme's implementation to display a single Drupal page while offline.
- *
- * All the available variables are mirrored in html.tpl.php and page.tpl.php.
- * Some may be blank but they are provided for consistency.
- *
- * @see template_preprocess()
- * @see template_preprocess_maintenance_page()
- */
-?><!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if IEMobile 7]><html class="iem7" <?php print $html_attributes; ?>><![endif]-->
 <!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7" <?php print $html_attributes; ?>><![endif]-->
 <!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8" <?php print $html_attributes; ?>><![endif]-->
@@ -25,42 +14,57 @@
 
   <?php print $styles; ?>
   <?php print $scripts; ?>
+  <link href='http://fonts.googleapis.com/css?family=Neucha' rel='stylesheet' type='text/css'>
   
 </head>
 <body class="<?php print $classes; ?>" <?php print $attributes;?>>
-
-<div id="page">
-<br/><br/>
-
-  <header id="header" role="banner">
-
-       <?php print $header; ?>
-
-		</header>
-
-  <div id="main">
-
-    <div id="content" class="column" role="main">
-      <?php print $highlighted; ?>
-      <a id="main-content"></a>
-      <?php if ($title): ?>
-        <h1 class="title" id="page-title"><?php print $title; ?></h1>
-      <?php endif; ?>
-      <?php print $messages; ?>
-      <?php print $content; ?>
-    </div><!-- /#content -->
-
+<div  class=' newHeaderContainer '>
+     <div class='newLogo clearfix'>
+		<div class='newLogoContent'>
+			Red Truck
+		</div><!-- END newLogoContent -->
+	</div> <!-- END newLogo -->
+</div> <!-- newHeaderContainer -->	
+<div class='theMaintenenceWrap'>
+	 <div class='newHeaderWrap clearfix'>
+	    <div  class='newHeader clearfix'>
+			
+			
+		
+		</div> <!-- END newHeader -->
+   </div><!-- newHeaderWrap -->	
+  <div class='newWrapper'>
+   <div class='newMaintenenceContainer clearfix'>
+		<p class='maintenance' style="text-align:center;font-family:'Neucha',cursive;font-size: 30px;font-weight:bold;padding:25px 0 0;">This site is currently under construction. Please check back with us.<br/> Contact information is located directly below. Thank you.</p>
+  
+        <p style='text-align: center;color:grey;padding: 50px 0 25px;'><b>Address:</b> 4707 Exposition Los angeles, Ca 90016&nbsp;&nbsp;&nbsp;<b>Email:</b> redtruck321@sbcglobal.com&nbsp;&nbsp;&nbsp;<b>Phone:</b> 562.896.6070</p>
+  
+  </div><!-- END newContainer -->
+ </div><!-- new Wrapper -->
+ <div class='newWrapper'>
    
+   <div class='newWrapper'>
+    <div class='newMaintenenceContainer clearfix'>
+		
+		
+	</div><!-- END newContainer -->
+   </div><!-- END newWrapper -->    
+	
+			
+			<div class='clearfix'> &nbsp;</div><!-- for clearing -->
+			
 
-   
-
-  </div><!-- /#main -->
-
-  <?php print $footer; ?>
-
-</div><!-- /#page -->
-
-<?php print $bottom; ?>
-
+  
+  
 </body>
 </html>
+   
+  
+	
+ 
+
+       
+		
+	  	
+   
+	 
