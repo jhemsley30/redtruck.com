@@ -46,7 +46,8 @@
    <div class='newWrapper'>
     <div class='newMaintenenceContainer clearfix'>
 		
-		
+		<img src='http://www.setdesign-la.com/redtruck-images/rt.jpg' alt='red truck images' />
+		<br/><br/><br/>
 	</div><!-- END newContainer -->
    </div><!-- END newWrapper -->    
 	
