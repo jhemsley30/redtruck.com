@@ -410,7 +410,7 @@ class views_handler_field extends views_handler {
         'link_class' => array('default' => ''),
         'prefix' => array('default' => '', 'translatable' => TRUE),
         'suffix' => array('default' => '', 'translatable' => TRUE),
-        'target' => array('default' => '', 'translatable' => TRUE),
+        'target' => array('default' => ''),
         'nl2br' => array('default' => FALSE, 'bool' => TRUE),
         'max_length' => array('default' => ''),
         'word_boundary' => array('default' => TRUE, 'bool' => TRUE),
@@ -814,7 +814,7 @@ If you would like to have the characters \'[\' and \']\' please use the html ent
           if (!empty($options[$type])) {
             $items = array();
             foreach ($options[$type] as $key => $value) {
-              $items[] = $key . ' == ' . $value;
+              $items[] = $key . ' == ' . check_plain($value);
             }
             $output .= theme('item_list',
               array(
@@ -965,7 +965,7 @@ If you would like to have the characters \'[\' and \']\' please use the html ent
       '#type' => 'textarea',
       '#title' => t('No results text'),
       '#default_value' => $this->options['empty'],
-      '#description' => t('Provide text to display if this field returns no results. You may include HTML. You may enter data from this view as per the "Replacement patterns" in the "Rewrite Results" section below.'),
+      '#description' => t('Provide text to display if this field contains an empty result. You may include HTML. You may enter data from this view as per the "Replacement patterns" in the "Rewrite Results" section below.'),
       '#fieldset' => 'empty_field_behavior',
     );
 
@@ -1200,18 +1200,13 @@ If you would like to have the characters \'[\' and \']\' please use the html ent
   /**
    * Render this field as altered text, from a fieldset set by the user.
    */
-   
-  /** ##########################################################################################################################
-      JH- THIS WAS ADDED TO ALLOW 'style="" into rewrite section of views, make sure to replace in updated modules of views
-	  ########################################################################################################################## **/
-  function render_altered($alter, $tokens) {     
-    $value = strtr($alter['text'], $tokens);
+  function render_altered($alter, $tokens) {
+    // Filter this right away as our substitutions are already sanitized.
+    $value = filter_xss_admin($alter['text']);
+    $value = strtr($value, $tokens);
 
     return $value;
   }
-  /** ###########################################################################################################################
-      JH- END OF WHAT I ADDED
-	  ########################################################################################################################### **/
 
   /**
    * Trim the field down to the specified length.
